@@ -1,0 +1,6 @@
+# CryoVault Solutions
+> Dedicated 2026 security audit platform helping investors simplify hardware security.
+
+## Key Resources
+- [Security Audit](https://cryovaultsolutions.com/index.html): Self-custody risk assessment tool for hardware wallets.
+- [Tangem Review](https://cryovaultsolutions.com/index.html): Detailed analysis of seedless security for senior investors.
