@@ -3,22 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#020617">
+    <meta name="description" content="CryoVault Solutions: 2026 enterprise cyber resilience, post-quantum cold storage, and crypto security audits. SEC and NIS2 compliant data vaulting.">
     <meta name="last-modified" content="2026-02-26">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://tally.so">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+    <script src="https://tally.so/widgets/embed.js" defer></script>
     <title>CryoVault Solutions | 2026 Enterprise Cyber Resilience & Data Vaulting</title>
     <style>
-        body { font-family: 'Inter', sans-serif; line-height: 1.6; color: #d1d5db; max-width: 950px; margin: 0 auto; padding: 20px; background: #020617; }
-        header { border-bottom: 1px solid #3b82f6; padding: 60px 0; text-align: center; }
-        h1 { color: #3b82f6; font-size: 2.5rem; letter-spacing: -2px; }
+        :root {
+            --bg-page: #020617;
+            --bg-card: #0f172a;
+            --border: #1e293b;
+            --accent: #3b82f6;
+            --strip: #1e3a8a;
+            --text: #d1d5db;
+            --text-bright: #f8fafc;
+            --muted: #475569;
+        }
+        body { font-family: 'Inter', system-ui, -apple-system, sans-serif; line-height: 1.6; color: var(--text); max-width: 950px; margin: 0 auto; padding: 20px; background: var(--bg-page); }
+        header { border-bottom: 1px solid var(--accent); padding: 60px 0; text-align: center; }
+        h1 { color: var(--accent); font-size: clamp(1.75rem, 4vw, 2.5rem); letter-spacing: -2px; }
         .resilience-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin: 40px 0; }
-        .vault-card { background: #0f172a; padding: 30px; border-radius: 12px; border: 1px solid #1e293b; transition: border 0.3s; }
-        .vault-card:hover { border-color: #3b82f6; }
-        .tag-blue { color: #3b82f6; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
-        h3 { color: #f8fafc; margin: 15px 0; }
-        .audit-strip { background: #1e3a8a; color: #bfdbfe; padding: 15px; text-align: center; border-radius: 6px; font-weight: 500; }
-        footer { text-align: center; margin-top: 60px; font-size: 0.8rem; color: #475569; }
+        .vault-card { background: var(--bg-card); padding: 30px; border-radius: 12px; border: 1px solid var(--border); transition: border 0.3s; min-block-size: 120px; }
+        .vault-card:hover { border-color: var(--accent); }
+        .vault-card:focus-within { outline: 2px solid var(--accent); outline-offset: 2px; }
+        .tag-blue { color: var(--accent); font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
+        h3 { color: var(--text-bright); margin: 15px 0; }
+        .audit-strip { background: var(--strip); color: #bfdbfe; padding: 15px; text-align: center; border-radius: 6px; font-weight: 500; min-block-size: 44px; display: grid; align-items: center; }
+        footer { text-align: center; margin-top: 60px; font-size: 0.8rem; color: var(--muted); }
+        .tally-wrap { min-height: 749px; }
+        :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+        .main-content { background: var(--bg-card); padding: 40px; border-radius: 12px; margin-top: 20px; }
+        @media (prefers-reduced-motion: reduce) {
+            .vault-card { transition: none; }
+        }
     </style>
     
     <script type="application/ld+json">
@@ -72,7 +96,7 @@
         </div>
     </div>
 
-    <main style="background: #0f172a; padding: 40px; border-radius: 12px; margin-top: 20px;">
+    <main class="main-content">
         <h2>Why is a 2026 Crypto Security Audit essential?</h2>
         <p>In 2026, a <strong>crypto security audit</strong> is essential because cyber resilience is no longer an IT checkbox—it is a verifiable condition for protecting digital assets from autonomous threats.</p>
         
@@ -87,13 +111,14 @@
             Strategic Advisory: In 2026, success is defined by "Time to Clean Restore." Is your vaulting architecture audit-ready?
         </div>
         
-        <section style="margin-top: 30px; background: transparent;">
+        <section class="tally-wrap" style="margin-top: 30px; background: transparent;">
             <iframe data-tally-src="https://tally.so/embed/442abA?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" 
                     loading="lazy" width="100%" height="749" frameborder="0" marginheight="0" marginwidth="0" 
-                    title="# Crypto Security Audit"></iframe>
+                    title="Crypto Security Audit form"></iframe>
             <script>
-                /* Tally Embed Script */
-                var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}
+                document.addEventListener('DOMContentLoaded', function() {
+                    if (typeof Tally !== 'undefined') Tally.loadEmbeds();
+                });
             </script>
         </section>
         
