@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
 
+# Help AI bots find your site summary
+
+Sitemap: https://cryovaultsolutions.com/sitemap.xml
 Sitemap: https://cryovaultsolutions.com/sitemap.txt

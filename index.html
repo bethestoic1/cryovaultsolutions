@@ -6,9 +6,7 @@
     <meta name="theme-color" content="#020617">
     <meta name="description" content="CryoVault Solutions: 2026 enterprise cyber resilience, post-quantum cold storage, and crypto security audits. SEC and NIS2 compliant data vaulting.">
     <meta name="last-modified" content="2026-02-26">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <!-- Favicon links re-add when favicon-32x32.png, favicon-16x16.png, apple-touch-icon.png exist at root -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://tally.so">
@@ -40,6 +38,9 @@
         .tally-wrap { min-height: 749px; }
         :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
         .main-content { background: var(--bg-card); padding: 40px; border-radius: 12px; margin-top: 20px; }
+        .site-nav { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin-bottom: 2rem; font-size: 0.9rem; }
+        .site-nav a { color: var(--accent); text-decoration: none; }
+        .site-nav a:hover { text-decoration: underline; }
         @media (prefers-reduced-motion: reduce) {
             .vault-card { transition: none; }
         }
@@ -52,18 +53,34 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "Is Tangem safe for senior investors?",
+          "name": "What is a crypto security audit for enterprises?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, Tangem is highly recommended for seniors because it eliminates the need for 24-word seed phrases, which are the leading cause of accidental fund loss for non-technical users."
+            "text": "A crypto security audit by CryoVault is a logic-based assessment that matches your organization's data assets and compliance requirements with the safest hardware and vaulting setup for 2026—including post-quantum readiness and SEC/NIS2 recovery validation."
           }
         },
         {
           "@type": "Question",
-          "name": "What is a crypto security audit?",
+          "name": "Why is post-quantum readiness important in 2026?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "A crypto security audit by CryoVault is a logic-based assessment that matches an investor's portfolio and technical comfort level with the safest hardware wallet setup for 2026."
+            "text": "NIST is finalizing post-quantum cryptography (PQC) standards. Enterprises holding long-term sensitive or regulated data need hybrid HSM architectures now so they can transition before quantum decryption becomes a real threat."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is cryptographically verifiable cold storage?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Beyond simple backups, verifiable cold storage provides proof of integrity and zero-data-drift over time. CryoVault's Cryo-Airgap protocols ensure your vaulted data can be proven recoverable and unchanged."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What do SEC and NIS2 require for recovery validation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Both frameworks expect organizations to demonstrate automated recovery capability. In 2026, success is measured by Time to Clean Restore—proving you can restore from vault/cold storage within mandated windows (e.g. under 120 minutes)."
           }
         }
       ]
@@ -76,22 +93,31 @@
     <header>
         <h1>CryoVault <span style="color: #fff;">Solutions</span></h1>
         <p>Defending Enterprise Assets in the Age of Autonomous Cyber-Threats</p>
+        <nav class="site-nav" aria-label="Main">
+            <a href="/">Home</a>
+            <a href="/services/post-quantum-ready.html">Post-Quantum Ready</a>
+            <a href="/services/cold-storage.html">Cold Storage</a>
+            <a href="/services/cyber-resilience-audit.html">Cyber-Resilience Audit</a>
+            <a href="/about.html">About</a>
+            <a href="/contact.html">Contact</a>
+            <a href="/blog/">Blog</a>
+        </nav>
     </header>
 
     <div class="resilience-grid">
         <div class="vault-card">
             <span class="tag-blue">Compliance</span>
-            <h3>Post-Quantum Ready</h3>
+            <h3><a href="/services/post-quantum-ready.html" style="color: inherit; text-decoration: none;">Post-Quantum Ready</a></h3>
             <p>As NIST finalizes PQC standards for 2026, we help organizations transition to <strong>Hybrid HSM architectures</strong> that secure long-term data against future quantum decryption.</p>
         </div>
         <div class="vault-card">
             <span class="tag-blue">Security</span>
-            <h3>Immutable Cold Storage</h3>
+            <h3><a href="/services/cold-storage.html" style="color: inherit; text-decoration: none;">Immutable Cold Storage</a></h3>
             <p>Moving beyond simple backups to <strong>Cryptographically Verifiable Retention</strong>. Our 2026 "Cryo-Airgap" protocols ensure zero-data-drift and provable integrity.</p>
         </div>
         <div class="vault-card">
             <span class="tag-blue">Recovery</span>
-            <h3>Cyber-Resilience Audits</h3>
+            <h3><a href="/services/cyber-resilience-audit.html" style="color: inherit; text-decoration: none;">Cyber-Resilience Audits</a></h3>
             <p>Meeting the 2026 SEC and NIS2 mandates for <strong>automated recovery validation</strong>. We don't just store data; we prove its recoverability in under 120 minutes.</p>
         </div>
     </div>
@@ -126,7 +152,16 @@
     </main>
 
     <footer>
-        &copy; 2026 CryoVaultSolutions.com
+        <nav class="site-nav" aria-label="Footer">
+            <a href="/">Home</a>
+            <a href="/services/post-quantum-ready.html">Post-Quantum</a>
+            <a href="/services/cold-storage.html">Cold Storage</a>
+            <a href="/services/cyber-resilience-audit.html">Audit</a>
+            <a href="/about.html">About</a>
+            <a href="/contact.html">Contact</a>
+            <a href="/blog/">Blog</a>
+        </nav>
+        <p>&copy; 2026 CryoVaultSolutions.com</p>
     </footer>
 
 </body>
