@@ -19,30 +19,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
     <title>Blog | CryoVault Solutions</title>
-    <style>
-        :root { --bg-page: #020617; --bg-card: #0f172a; --border: #1e293b; --accent: #3b82f6; --text: #d1d5db; --text-bright: #f8fafc; --muted: #475569; }
-        body { font-family: 'Inter', system-ui, sans-serif; line-height: 1.6; color: var(--text); max-width: 950px; margin: 0 auto; padding: 20px; background: var(--bg-page); }
-        header { border-bottom: 1px solid var(--accent); padding: 40px 0; text-align: center; }
-        h1 { color: var(--accent); font-size: clamp(1.5rem, 3vw, 2rem); }
-        h2 { color: var(--text-bright); }
-        .site-nav { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin-bottom: 1.5rem; font-size: 0.9rem; }
-        .site-nav a { color: var(--accent); text-decoration: none; }
-        .site-nav a:hover { text-decoration: underline; }
-        .main-content { background: var(--bg-card); padding: 40px; border-radius: 12px; margin-top: 20px; border: 1px solid var(--border); }
-        .post-list { list-style: none; padding: 0; margin: 0; }
-        .post-list li { margin-bottom: 1.25rem; padding-bottom: 1.25rem; border-bottom: 1px solid var(--border); }
-        .post-list li:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
-        .post-list a { color: var(--accent); text-decoration: none; font-weight: 600; }
-        .post-list a:hover { text-decoration: underline; }
-        .post-meta { font-size: 0.85rem; color: var(--muted); margin-top: 0.25rem; }
-        .post-excerpt { font-size: 0.9rem; margin-top: 0.4rem; }
-        footer { text-align: center; margin-top: 60px; font-size: 0.8rem; color: var(--muted); }
-        .main-content a { color: #00f0ff; }
-        .main-content a:visited { color: #b8a9ff; }
-        .main-content a:hover { color: #7dffb3; }
-        .main-content a:active { color: #ff6bcb; }
-        :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-    </style>
+    <link rel="stylesheet" href="/css/velocity.css">
 </head>
 <body>
     <header>
@@ -58,7 +35,7 @@
             <a href="/blog/">Blog</a>
         </nav>
     </header>
-    <main class="main-content">
+    <main class="content-panel">
         <h2>Blog</h2>
         <p>Enterprise cyber resilience insights: post-quantum cryptography, cold storage architecture, SEC/NIS2 compliance, and recovery validation.</p>
         <ul class="post-list">

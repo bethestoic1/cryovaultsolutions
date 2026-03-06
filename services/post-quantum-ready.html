@@ -19,30 +19,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
     <title>Post-Quantum Ready Architecture (2026) | CryoVault Solutions</title>
-    <style>
-        :root { --bg-page: #020617; --bg-card: #0f172a; --border: #1e293b; --accent: #3b82f6; --strip: #1e3a8a; --text: #d1d5db; --text-bright: #f8fafc; --muted: #475569; }
-        body { font-family: 'Inter', system-ui, sans-serif; line-height: 1.6; color: var(--text); max-width: 950px; margin: 0 auto; padding: 20px; background: var(--bg-page); }
-        header { border-bottom: 1px solid var(--accent); padding: 40px 0; text-align: center; }
-        h1 { color: var(--accent); font-size: clamp(1.5rem, 3vw, 2rem); }
-        h2 { color: var(--text-bright); margin-top: 2rem; }
-        h3 { color: var(--text-bright); margin-top: 1.5rem; }
-        h4 { color: var(--text-bright); margin-top: 1.25rem; }
-        .site-nav { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin-bottom: 1.5rem; font-size: 0.9rem; }
-        .site-nav a { color: var(--accent); text-decoration: none; }
-        .site-nav a:hover { text-decoration: underline; }
-        .main-content { background: var(--bg-card); padding: 40px; border-radius: 12px; margin-top: 20px; border: 1px solid var(--border); }
-        .audit-strip { background: var(--strip); color: #bfdbfe; padding: 15px; text-align: center; border-radius: 6px; font-weight: 500; margin-top: 28px; }
-        .info-box { background: var(--bg-page); border: 1px solid var(--border); border-radius: 8px; padding: 20px; margin: 20px 0; }
-        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
-        th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--border); }
-        th { color: var(--text-bright); font-weight: 600; }
-        footer { text-align: center; margin-top: 60px; font-size: 0.8rem; color: var(--muted); }
-        .main-content a { color: #00f0ff; }
-        .main-content a:visited { color: #b8a9ff; }
-        .main-content a:hover { color: #7dffb3; }
-        .main-content a:active { color: #ff6bcb; }
-        :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-    </style>
+    <link rel="stylesheet" href="/css/velocity.css">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -73,7 +50,7 @@
             <a href="/blog/">Blog</a>
         </nav>
     </header>
-    <main class="main-content">
+    <main class="content-panel">
         <h2>Post-Quantum Ready Architecture for Enterprises (2026)</h2>
 
         <p><strong>Post-quantum cryptography (PQC)</strong> is no longer a distant concern. NIST has finalized its first set of post-quantum standards, and organizations holding long-term sensitive or regulated data must act now. The threat model is simple: adversaries can harvest encrypted data today and decrypt it once quantum computers reach sufficient scale. This is known as the <strong>"harvest now, decrypt later"</strong> attack, and it makes every year of delay a compounding risk.</p>
@@ -182,6 +159,9 @@
             <li>Government contractors or defense-adjacent enterprises</li>
         </ul>
 
+        <h3>Enterprise Hardware Security Modules (HSMs)</h3>
+        <p>For organizations migrating to hybrid PQC architectures, upgrading to quantum-capable HSM firmware is mandatory. For enterprise-grade institutional custody and key management, we recommend evaluating <strong><a href="#" target="_blank" rel="noopener nofollow">Ledger Enterprise</a></strong> for scalable, SEC-compliant digital asset operations.</p>
+
         <h3>Hardware-Backed Key Storage</h3>
         <p>For long-term key storage and self-custody, hardware wallets with secure elements complement HSM strategies. We recommend: <a href="https://shop.ledger.com/?r=260d41231c91" target="_blank" rel="noopener nofollow">Ledger</a>, <a href="https://affil.trezor.io/SH11L" target="_blank" rel="noopener nofollow">Trezor</a>, <a href="https://onekey.so/r/5TVA93" target="_blank" rel="noopener nofollow">OneKey</a>, and <a href="https://tangem.com/invite/CRYPTOVAULT" target="_blank" rel="noopener nofollow">Tangem</a>.</p>
 
@@ -199,10 +179,20 @@
         <h4>Is post-quantum readiness required by regulation?</h4>
         <p>Not yet as an explicit mandate for most private-sector organizations. However, SEC cyber resilience rules, NIS2, and DORA all require organizations to demonstrate forward-looking risk management for cryptographic threats. Auditors are beginning to ask about PQC preparedness, and federal contractors face direct NIST compliance requirements.</p>
 
-        <div class="audit-strip">
-            Is your vaulting architecture post-quantum ready? <a href="/contact.html" style="color: #bfdbfe; font-weight: 600;">Request a crypto security audit</a>.
+        <div class="action-strip">
+            Is your vaulting architecture post-quantum ready? <a href="/contact.html" >Request a crypto security audit</a>.
         </div>
     </main>
+    <div class="partners-strip">
+        <span>Trusted Infrastructure Partners</span>
+        <div class="partners-grid">
+            <a href="#" >Backblaze B2</a>
+            <a href="#" >Ledger Enterprise</a>
+            <a href="#" >Kinsta</a>
+            <a href="#" >Vanta</a>
+        </div>
+    </div>
+
     <footer>
         <nav class="site-nav" aria-label="Footer">
             <a href="/">Home</a>
