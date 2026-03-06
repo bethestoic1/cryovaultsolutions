@@ -1,7 +1,4 @@
 User-agent: *
 Allow: /
 
-# Help AI bots find your site summary
-LLMS: https://cryovaultsolutions.com/llms.txt
-
 Sitemap: https://cryovaultsolutions.com/sitemap.txt
