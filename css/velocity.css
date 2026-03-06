@@ -1,0 +1,308 @@
+/* 
+ * Velocity UI | 2026 Enterprise Aesthetic
+ * Target: High-Ticket B2B, CISOs, Compliance Officers
+ */
+
+:root {
+    /* OLED-Optimized Dark Mode Palette */
+    --bg-core: #09090b; /* Zinc 950 */
+    --bg-surface: #18181b; /* Zinc 900 */
+    --bg-surface-elevated: #27272a; /* Zinc 800 */
+    
+    /* Institutional Accent Colors */
+    --accent-primary: #3b82f6; /* Blue 500 */
+    --accent-hover: #60a5fa; /* Blue 400 */
+    --accent-glow: rgba(59, 130, 246, 0.15);
+    
+    /* Text Hierarchy */
+    --text-primary: #fafafa; /* Zinc 50 */
+    --text-secondary: #a1a1aa; /* Zinc 400 */
+    --text-tertiary: #71717a; /* Zinc 500 */
+    
+    /* Structural Tokens */
+    --border-subtle: rgba(255, 255, 255, 0.08);
+    --border-strong: rgba(255, 255, 255, 0.15);
+    --radius-bento: 16px;
+    --radius-sm: 8px;
+    
+    /* Fluid Spacing */
+    --space-page: clamp(1rem, 5vw, 2.5rem);
+    --space-section: clamp(3rem, 8vw, 6rem);
+}
+
+/* Base Reset & Typography */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    background: var(--bg-core);
+    padding: var(--space-page);
+    max-width: 1024px;
+    margin: 0 auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography Scale (Fluid) */
+h1 {
+    color: var(--text-primary);
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    letter-spacing: -0.03em;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    color: var(--text-primary);
+    font-size: clamp(1.5rem, 3.5vw, 2.25rem);
+    letter-spacing: -0.02em;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    color: var(--text-primary);
+    font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+    font-weight: 600;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+h4 {
+    color: var(--text-primary);
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-top: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+p, li {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+ul {
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Links & States */
+a {
+    color: var(--accent-primary);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: var(--accent-hover);
+    text-decoration: underline;
+}
+
+a:focus-visible {
+    outline: 2px solid var(--accent-primary);
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
+/* Global Nav & Header */
+header {
+    padding: var(--space-section) 0 3rem 0;
+    text-align: center;
+    border-bottom: 1px solid var(--border-subtle);
+    margin-bottom: 2rem;
+}
+
+.site-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 2rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.site-nav a {
+    color: var(--text-secondary);
+}
+
+.site-nav a:hover {
+    color: var(--text-primary);
+    text-decoration: none;
+}
+
+/* Bento Grid 2.0 Components */
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin: 3rem 0;
+}
+
+.bento-card {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-bento);
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    /* Glassmorphism hint */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+.bento-card:hover {
+    border-color: var(--border-strong);
+    background: var(--bg-surface-elevated);
+    box-shadow: 0 8px 32px var(--accent-glow);
+    transform: translateY(-2px);
+}
+
+.bento-card h3 {
+    margin-top: 0.5rem;
+}
+
+.bento-card a {
+    color: var(--text-primary);
+}
+
+.bento-card a::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+}
+
+/* Typography Tags */
+.tag-accent {
+    display: inline-block;
+    color: var(--accent-primary);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.5rem;
+}
+
+/* Content Blocks */
+.content-panel {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-bento);
+    padding: clamp(1.5rem, 5vw, 3rem);
+    margin: 2rem 0;
+}
+
+.info-box {
+    background: rgba(59, 130, 246, 0.05);
+    border-left: 4px solid var(--accent-primary);
+    padding: 1.5rem;
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    margin: 2rem 0;
+}
+
+/* Affiliate / Action Strips */
+.action-strip {
+    background: var(--bg-surface-elevated);
+    border: 1px solid var(--border-subtle);
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: var(--radius-sm);
+    margin: 3rem 0;
+    font-weight: 500;
+}
+
+.action-strip a {
+    font-weight: 600;
+    color: var(--accent-primary);
+}
+
+.partners-strip {
+    background: transparent;
+    border-top: 1px solid var(--border-subtle);
+    padding-top: 3rem;
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.partners-strip span {
+    color: var(--text-tertiary);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    display: block;
+    margin-bottom: 1.5rem;
+}
+
+.partners-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    align-items: center;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.partners-grid:hover {
+    opacity: 1;
+}
+
+.partners-grid a {
+    color: var(--text-secondary);
+    font-weight: 600;
+    font-size: 0.95rem;
+    letter-spacing: -0.02em;
+}
+
+.partners-grid a:hover {
+    color: var(--text-primary);
+    text-decoration: none;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    font-size: 0.95rem;
+}
+
+th, td {
+    text-align: left;
+    padding: 1rem;
+    border-bottom: 1px solid var(--border-subtle);
+}
+
+th {
+    color: var(--text-primary);
+    font-weight: 600;
+    background: rgba(255, 255, 255, 0.02);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-subtle);
+    font-size: 0.85rem;
+    color: var(--text-tertiary);
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}

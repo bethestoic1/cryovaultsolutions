@@ -22,43 +22,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
     <script src="https://tally.so/widgets/embed.js" defer></script>
     <title>CryoVault Solutions | 2026 Enterprise Cyber Resilience & Data Vaulting</title>
-    <style>
-        :root {
-            --bg-page: #020617;
-            --bg-card: #0f172a;
-            --border: #1e293b;
-            --accent: #3b82f6;
-            --strip: #1e3a8a;
-            --text: #d1d5db;
-            --text-bright: #f8fafc;
-            --muted: #475569;
-        }
-        body { font-family: 'Inter', system-ui, -apple-system, sans-serif; line-height: 1.6; color: var(--text); max-width: 950px; margin: 0 auto; padding: 20px; background: var(--bg-page); }
-        header { border-bottom: 1px solid var(--accent); padding: 60px 0; text-align: center; }
-        h1 { color: var(--accent); font-size: clamp(1.75rem, 4vw, 2.5rem); letter-spacing: -2px; }
-        h2 { color: var(--text-bright); }
-        h3 { color: var(--text-bright); margin: 15px 0; }
-        .resilience-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin: 40px 0; }
-        .vault-card { background: var(--bg-card); padding: 30px; border-radius: 12px; border: 1px solid var(--border); transition: border 0.3s; min-block-size: 120px; }
-        .vault-card:hover { border-color: var(--accent); }
-        .vault-card:focus-within { outline: 2px solid var(--accent); outline-offset: 2px; }
-        .tag-blue { color: var(--accent); font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
-        .audit-strip { background: var(--strip); color: #bfdbfe; padding: 15px; text-align: center; border-radius: 6px; font-weight: 500; min-block-size: 44px; display: grid; align-items: center; }
-        footer { text-align: center; margin-top: 60px; font-size: 0.8rem; color: var(--muted); }
-        .main-content a, .vault-card a { color: #00f0ff; }
-        .main-content a:visited, .vault-card a:visited { color: #b8a9ff; }
-        .main-content a:hover, .vault-card a:hover { color: #7dffb3; }
-        .main-content a:active, .vault-card a:active { color: #ff6bcb; }
-        .tally-wrap { min-height: 749px; }
-        :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-        .main-content { background: var(--bg-card); padding: 40px; border-radius: 12px; margin-top: 20px; }
-        .site-nav { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin-bottom: 2rem; font-size: 0.9rem; }
-        .site-nav a { color: var(--accent); text-decoration: none; }
-        .site-nav a:hover { text-decoration: underline; }
-        @media (prefers-reduced-motion: reduce) {
-            .vault-card { transition: none; }
-        }
-    </style>
+    <link rel="stylesheet" href="/css/velocity.css">
 
     <script type="application/ld+json">
     {
@@ -136,25 +100,25 @@
         </nav>
     </header>
 
-    <div class="resilience-grid">
-        <div class="vault-card">
-            <span class="tag-blue">Compliance</span>
+    <div class="bento-grid">
+        <div class="bento-card">
+            <span class="tag-accent">Compliance</span>
             <h3><a href="/services/post-quantum-ready.html" style="color: inherit; text-decoration: none;">Post-Quantum Ready</a></h3>
             <p>NIST has finalized PQC standards (FIPS 203, 204, 205). We help organizations transition to <strong>hybrid HSM architectures</strong> using CRYSTALS-Kyber and Dilithium — protecting long-term data against harvest-now-decrypt-later attacks.</p>
         </div>
-        <div class="vault-card">
-            <span class="tag-blue">Security</span>
+        <div class="bento-card">
+            <span class="tag-accent">Security</span>
             <h3><a href="/services/cold-storage.html" style="color: inherit; text-decoration: none;">Immutable Cold Storage</a></h3>
             <p>Moving beyond simple backups to <strong>cryptographically verifiable retention</strong>. Our Cryo-Airgap protocols use hash chains, Merkle trees, and signed attestations to ensure zero-data-drift and provable integrity.</p>
         </div>
-        <div class="vault-card">
-            <span class="tag-blue">Recovery</span>
+        <div class="bento-card">
+            <span class="tag-accent">Recovery</span>
             <h3><a href="/services/cyber-resilience-audit.html" style="color: inherit; text-decoration: none;">Cyber-Resilience Audits</a></h3>
             <p>Meeting 2026 SEC and NIS2 mandates for <strong>automated recovery validation</strong>. We measure Time to Clean Restore and produce audit-ready evidence that your data is recoverable in under 120 minutes.</p>
         </div>
     </div>
 
-    <main class="main-content">
+    <main class="content-panel">
         <h2>Why Is a 2026 Crypto Security Audit Essential?</h2>
         <p>In 2026, a <strong>crypto security audit</strong> is essential because cyber resilience is no longer an IT checkbox — it is a verifiable condition that regulators, insurers, and boards expect organizations to demonstrate. Three forces make this urgent:</p>
 
@@ -174,8 +138,8 @@
             <li><strong>Global Namespace:</strong> Preserving object identity and context across hybrid-cloud environments to eliminate data silos while maintaining cryptographic integrity chains.</li>
         </ul>
 
-        <div class="audit-strip">
-            Strategic Advisory: In 2026, success is defined by "Time to Clean Restore." <a href="/contact.html" style="color: #bfdbfe; font-weight: 600;">Is your vaulting architecture audit-ready?</a>
+        <div class="action-strip">
+            Strategic Advisory: In 2026, success is defined by "Time to Clean Restore." <a href="/contact.html" >Is your vaulting architecture audit-ready?</a>
         </div>
 
         <p style="margin-top: 1.5rem; font-size: 0.9rem; color: var(--muted);">Resources: <a href="/services/cold-storage.html">Hardware we recommend for key and asset custody</a>.</p>
@@ -191,6 +155,16 @@
             </script>
         </section>
     </main>
+
+    <div class="partners-strip">
+        <span>Trusted Infrastructure Partners</span>
+        <div class="partners-grid">
+            <a href="#" >Backblaze B2</a>
+            <a href="#" >Ledger Enterprise</a>
+            <a href="#" >Kinsta</a>
+            <a href="#" >Vanta</a>
+        </div>
+    </div>
 
     <footer>
         <nav class="site-nav" aria-label="Footer">
