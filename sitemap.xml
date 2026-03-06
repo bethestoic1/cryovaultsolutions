@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://cryovaultsolutions.com/</loc></url>
-  <url><loc>https://cryovaultsolutions.com/about.html</loc></url>
-  <url><loc>https://cryovaultsolutions.com/contact.html</loc></url>
-  <url><loc>https://cryovaultsolutions.com/services/post-quantum-ready.html</loc></url>
-  <url><loc>https://cryovaultsolutions.com/services/cold-storage.html</loc></url>
-  <url><loc>https://cryovaultsolutions.com/services/cyber-resilience-audit.html</loc></url>
-  <url><loc>https://cryovaultsolutions.com/blog/</loc></url>
-  <url><loc>https://cryovaultsolutions.com/blog/post-quantum-cryptography-migration-2026.html</loc></url>
+  <url><loc>https://cryovaultsolutions.com/</loc><lastmod>2026-03-06</lastmod></url>
+  <url><loc>https://cryovaultsolutions.com/about.html</loc><lastmod>2026-03-06</lastmod></url>
+  <url><loc>https://cryovaultsolutions.com/contact.html</loc><lastmod>2026-03-06</lastmod></url>
+  <url><loc>https://cryovaultsolutions.com/services/post-quantum-ready.html</loc><lastmod>2026-03-06</lastmod></url>
+  <url><loc>https://cryovaultsolutions.com/services/cold-storage.html</loc><lastmod>2026-03-06</lastmod></url>
+  <url><loc>https://cryovaultsolutions.com/services/cyber-resilience-audit.html</loc><lastmod>2026-03-06</lastmod></url>
+  <url><loc>https://cryovaultsolutions.com/blog/</loc><lastmod>2026-03-06</lastmod></url>
+  <url><loc>https://cryovaultsolutions.com/blog/post-quantum-cryptography-migration-2026.html</loc><lastmod>2026-03-06</lastmod></url>
+  <url><loc>https://cryovaultsolutions.com/blog/best-enterprise-cold-storage-2026.html</loc><lastmod>2026-03-06</lastmod></url>
+  <url><loc>https://cryovaultsolutions.com/blog/sec-cyber-resilience-recovery-validation-2026.html</loc><lastmod>2026-03-06</lastmod></url>
+  <url><loc>https://cryovaultsolutions.com/blog/time-to-clean-restore-2026.html</loc><lastmod>2026-03-06</lastmod></url>
+  <url><loc>https://cryovaultsolutions.com/blog/nis2-data-vault-compliance-checklist-2026.html</loc><lastmod>2026-03-06</lastmod></url>
 </urlset>

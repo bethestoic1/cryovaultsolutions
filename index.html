@@ -5,8 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#020617">
     <meta name="description" content="CryoVault Solutions: 2026 enterprise cyber resilience, post-quantum cold storage, and crypto security audits. SEC and NIS2 compliant data vaulting.">
-    <meta name="last-modified" content="2026-02-26">
-    <!-- Favicon links re-add when favicon-32x32.png, favicon-16x16.png, apple-touch-icon.png exist at root -->
+    <meta name="last-modified" content="2026-03-06">
+    <link rel="canonical" href="https://cryovaultsolutions.com/">
+    <meta property="og:title" content="CryoVault Solutions | Enterprise Cyber Resilience & Data Vaulting">
+    <meta property="og:description" content="2026 enterprise cyber resilience: post-quantum cold storage, crypto security audits, SEC and NIS2 compliant data vaulting.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cryovaultsolutions.com/">
+    <meta property="og:image" content="https://cryovaultsolutions.com/assets/logo-nobg.png">
+    <meta name="twitter:card" content="summary">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://tally.so">
@@ -27,12 +36,13 @@
         body { font-family: 'Inter', system-ui, -apple-system, sans-serif; line-height: 1.6; color: var(--text); max-width: 950px; margin: 0 auto; padding: 20px; background: var(--bg-page); }
         header { border-bottom: 1px solid var(--accent); padding: 60px 0; text-align: center; }
         h1 { color: var(--accent); font-size: clamp(1.75rem, 4vw, 2.5rem); letter-spacing: -2px; }
+        h2 { color: var(--text-bright); }
+        h3 { color: var(--text-bright); margin: 15px 0; }
         .resilience-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin: 40px 0; }
         .vault-card { background: var(--bg-card); padding: 30px; border-radius: 12px; border: 1px solid var(--border); transition: border 0.3s; min-block-size: 120px; }
         .vault-card:hover { border-color: var(--accent); }
         .vault-card:focus-within { outline: 2px solid var(--accent); outline-offset: 2px; }
         .tag-blue { color: var(--accent); font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
-        h3 { color: var(--text-bright); margin: 15px 0; }
         .audit-strip { background: var(--strip); color: #bfdbfe; padding: 15px; text-align: center; border-radius: 6px; font-weight: 500; min-block-size: 44px; display: grid; align-items: center; }
         footer { text-align: center; margin-top: 60px; font-size: 0.8rem; color: var(--muted); }
         .tally-wrap { min-height: 749px; }
@@ -45,7 +55,17 @@
             .vault-card { transition: none; }
         }
     </style>
-    
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "CryoVault Solutions",
+      "url": "https://cryovaultsolutions.com",
+      "logo": "https://cryovaultsolutions.com/assets/logo-nobg.png",
+      "description": "Enterprise cyber resilience advisory: post-quantum cryptography migration, cryptographically verifiable cold storage, and SEC/NIS2 recovery validation."
+    }
+    </script>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -64,7 +84,7 @@
           "name": "Why is post-quantum readiness important in 2026?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "NIST is finalizing post-quantum cryptography (PQC) standards. Enterprises holding long-term sensitive or regulated data need hybrid HSM architectures now so they can transition before quantum decryption becomes a real threat."
+            "text": "NIST has finalized post-quantum cryptography (PQC) standards (FIPS 203, 204, 205). Enterprises holding long-term sensitive or regulated data need hybrid HSM architectures now to protect against harvest-now-decrypt-later attacks before quantum decryption becomes a real threat."
           }
         },
         {
@@ -72,7 +92,7 @@
           "name": "What is cryptographically verifiable cold storage?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Beyond simple backups, verifiable cold storage provides proof of integrity and zero-data-drift over time. CryoVault's Cryo-Airgap protocols ensure your vaulted data can be proven recoverable and unchanged."
+            "text": "Beyond simple backups, verifiable cold storage provides cryptographic proof of integrity and zero-data-drift over time using hash chains, Merkle trees, and signed attestations. CryoVault's Cryo-Airgap protocols ensure your vaulted data can be proven recoverable and unchanged."
           }
         },
         {
@@ -80,13 +100,21 @@
           "name": "What do SEC and NIS2 require for recovery validation?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Both frameworks expect organizations to demonstrate automated recovery capability. In 2026, success is measured by Time to Clean Restore—proving you can restore from vault/cold storage within mandated windows (e.g. under 120 minutes)."
+            "text": "Both frameworks expect organizations to demonstrate automated recovery capability with measurable evidence. In 2026, success is measured by Time to Clean Restore (TTCR)—proving you can restore from vault/cold storage within mandated windows with verified data integrity and no compromise reintroduction."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is Time to Clean Restore?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Time to Clean Restore (TTCR) is the measured duration from restore initiation to verified clean data availability. Unlike traditional RTO, TTCR includes integrity verification, malware scanning, and operational validation—ensuring restored data is not only available but provably uncompromised."
           }
         }
       ]
     }
     </script>
-    
+
 </head>
 <body>
 
@@ -108,38 +136,47 @@
         <div class="vault-card">
             <span class="tag-blue">Compliance</span>
             <h3><a href="/services/post-quantum-ready.html" style="color: inherit; text-decoration: none;">Post-Quantum Ready</a></h3>
-            <p>As NIST finalizes PQC standards for 2026, we help organizations transition to <strong>Hybrid HSM architectures</strong> that secure long-term data against future quantum decryption.</p>
+            <p>NIST has finalized PQC standards (FIPS 203, 204, 205). We help organizations transition to <strong>hybrid HSM architectures</strong> using CRYSTALS-Kyber and Dilithium — protecting long-term data against harvest-now-decrypt-later attacks.</p>
         </div>
         <div class="vault-card">
             <span class="tag-blue">Security</span>
             <h3><a href="/services/cold-storage.html" style="color: inherit; text-decoration: none;">Immutable Cold Storage</a></h3>
-            <p>Moving beyond simple backups to <strong>Cryptographically Verifiable Retention</strong>. Our 2026 "Cryo-Airgap" protocols ensure zero-data-drift and provable integrity.</p>
+            <p>Moving beyond simple backups to <strong>cryptographically verifiable retention</strong>. Our Cryo-Airgap protocols use hash chains, Merkle trees, and signed attestations to ensure zero-data-drift and provable integrity.</p>
         </div>
         <div class="vault-card">
             <span class="tag-blue">Recovery</span>
             <h3><a href="/services/cyber-resilience-audit.html" style="color: inherit; text-decoration: none;">Cyber-Resilience Audits</a></h3>
-            <p>Meeting the 2026 SEC and NIS2 mandates for <strong>automated recovery validation</strong>. We don't just store data; we prove its recoverability in under 120 minutes.</p>
+            <p>Meeting 2026 SEC and NIS2 mandates for <strong>automated recovery validation</strong>. We measure Time to Clean Restore and produce audit-ready evidence that your data is recoverable in under 120 minutes.</p>
         </div>
     </div>
 
     <main class="main-content">
-        <h2>Why is a 2026 Crypto Security Audit essential?</h2>
-        <p>In 2026, a <strong>crypto security audit</strong> is essential because cyber resilience is no longer an IT checkbox—it is a verifiable condition for protecting digital assets from autonomous threats.</p>
-        
-        <h3>2026 Hardware Security and Storage Priorities:</h3>
+        <h2>Why Is a 2026 Crypto Security Audit Essential?</h2>
+        <p>In 2026, a <strong>crypto security audit</strong> is essential because cyber resilience is no longer an IT checkbox — it is a verifiable condition that regulators, insurers, and boards expect organizations to demonstrate. Three forces make this urgent:</p>
+
+        <h3>The Quantum Threat Is Already Here</h3>
+        <p>Nation-state adversaries are harvesting encrypted data today, planning to decrypt it once quantum computers reach sufficient scale. This <strong>harvest-now-decrypt-later</strong> attack means data with a secrecy requirement beyond 10 years — healthcare records, financial instruments, custody keys, intellectual property — is already at risk. A crypto security audit identifies which of your assets are exposed and maps a migration path to <a href="/services/post-quantum-ready.html">post-quantum hybrid HSM architectures</a>.</p>
+
+        <h3>Backups Fail Silently</h3>
+        <p>Most organizations discover their backups are unusable during an actual incident. Bit rot, misconfigured retention, untested restore procedures, and ransomware targeting backup infrastructure all create silent failures. A crypto security audit validates that your <a href="/services/cold-storage.html">cold storage is cryptographically verifiable</a> — proving data integrity and recoverability before you need it, not after.</p>
+
+        <h3>Regulators Demand Proof</h3>
+        <p>The SEC's cyber resilience rules and the EU's NIS2 directive require organizations to demonstrate recovery capability with measurable evidence. "We have backups" is no longer sufficient — auditors want <strong>Time to Clean Restore</strong> measurements, hash verification logs, and tested recovery procedures. Our <a href="/services/cyber-resilience-audit.html">cyber-resilience audit</a> produces the evidence package your compliance team needs.</p>
+
+        <h3>2026 Hardware Security and Storage Priorities</h3>
         <ul>
-            <li><strong>AI Token Economics:</strong> Optimizing storage behavior to GPU spend for maximum efficiency in 2026 workloads.</li>
-            <li><strong>Zero-Trust Convergence:</strong> Hardening the physical layer with secure-boot, encrypted firmware, and hardware-level protection.</li>
-            <li><strong>Global Namespace:</strong> Preserving object identity and context across hybrid-cloud environments to eliminate data silos.</li>
+            <li><strong>AI Token Economics:</strong> Optimizing storage behavior to GPU spend for maximum efficiency in 2026 workloads while maintaining security guarantees for training data and model weights.</li>
+            <li><strong>Zero-Trust Convergence:</strong> Hardening the physical layer with secure-boot, encrypted firmware, HSM-backed key management, and hardware-level attestation.</li>
+            <li><strong>Global Namespace:</strong> Preserving object identity and context across hybrid-cloud environments to eliminate data silos while maintaining cryptographic integrity chains.</li>
         </ul>
 
         <div class="audit-strip">
-            Strategic Advisory: In 2026, success is defined by "Time to Clean Restore." Is your vaulting architecture audit-ready?
+            Strategic Advisory: In 2026, success is defined by "Time to Clean Restore." <a href="/contact.html" style="color: #bfdbfe; font-weight: 600;">Is your vaulting architecture audit-ready?</a>
         </div>
-        
+
         <section class="tally-wrap" style="margin-top: 30px; background: transparent;">
-            <iframe data-tally-src="https://tally.so/embed/442abA?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" 
-                    loading="lazy" width="100%" height="749" frameborder="0" marginheight="0" marginwidth="0" 
+            <iframe data-tally-src="https://tally.so/embed/442abA?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+                    loading="lazy" width="100%" height="749" frameborder="0" marginheight="0" marginwidth="0"
                     title="Crypto Security Audit form"></iframe>
             <script>
                 document.addEventListener('DOMContentLoaded', function() {
@@ -147,8 +184,6 @@
                 });
             </script>
         </section>
-        
-        
     </main>
 
     <footer>

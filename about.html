@@ -4,7 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#020617">
-    <meta name="description" content="About CryoVault Solutions: 2026 enterprise cyber resilience, post-quantum cold storage, and crypto security audits.">
+    <meta name="description" content="About CryoVault Solutions: enterprise cyber resilience advisory specializing in post-quantum cryptography, verifiable cold storage, and SEC/NIS2 recovery validation.">
+    <link rel="canonical" href="https://cryovaultsolutions.com/about.html">
+    <meta property="og:title" content="About CryoVault Solutions | Enterprise Cyber Resilience">
+    <meta property="og:description" content="Enterprise cyber resilience advisory: post-quantum cryptography, verifiable cold storage, and SEC/NIS2 recovery validation.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cryovaultsolutions.com/about.html">
+    <meta property="og:image" content="https://cryovaultsolutions.com/assets/logo-nobg.png">
+    <meta name="twitter:card" content="summary">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
@@ -14,13 +24,26 @@
         body { font-family: 'Inter', system-ui, sans-serif; line-height: 1.6; color: var(--text); max-width: 950px; margin: 0 auto; padding: 20px; background: var(--bg-page); }
         header { border-bottom: 1px solid var(--accent); padding: 40px 0; text-align: center; }
         h1 { color: var(--accent); font-size: clamp(1.5rem, 3vw, 2rem); }
+        h2 { color: var(--text-bright); margin-top: 2rem; }
+        h3 { color: var(--text-bright); margin-top: 1.5rem; }
         .site-nav { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin-bottom: 1.5rem; font-size: 0.9rem; }
         .site-nav a { color: var(--accent); text-decoration: none; }
         .site-nav a:hover { text-decoration: underline; }
         .main-content { background: var(--bg-card); padding: 40px; border-radius: 12px; margin-top: 20px; border: 1px solid var(--border); }
+        .audit-strip { background: #1e3a8a; color: #bfdbfe; padding: 15px; text-align: center; border-radius: 6px; font-weight: 500; margin-top: 28px; }
         footer { text-align: center; margin-top: 60px; font-size: 0.8rem; color: var(--muted); }
-        .site-nav a { color: var(--accent); }
+        :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
     </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "CryoVault Solutions",
+      "url": "https://cryovaultsolutions.com",
+      "logo": "https://cryovaultsolutions.com/assets/logo-nobg.png",
+      "description": "Enterprise cyber resilience advisory specializing in post-quantum cryptography migration, cryptographically verifiable cold storage, and SEC/NIS2 recovery validation."
+    }
+    </script>
 </head>
 <body>
     <header>
@@ -38,9 +61,59 @@
     </header>
     <main class="main-content">
         <h2>About CryoVault Solutions</h2>
-        <p>CryoVault Solutions helps enterprises and data custodians achieve <strong>2026-ready cyber resilience</strong> through post-quantum readiness, cryptographically verifiable cold storage, and audit-ready recovery validation.</p>
-        <p>We focus on the convergence of <strong>NIST PQC standards</strong>, <strong>SEC and NIS2</strong> mandates, and hardware-level security—so your vaulting architecture is both compliant and provably recoverable. In 2026, success is defined by <strong>Time to Clean Restore</strong>.</p>
-        <p><a href="/contact.html">Get in touch</a> for a crypto security audit or to discuss your vaulting and recovery strategy.</p>
+
+        <p>CryoVault Solutions is an enterprise cyber resilience advisory focused on three areas where organizations face the most risk in 2026: <strong>post-quantum cryptography migration</strong>, <strong>cryptographically verifiable cold storage</strong>, and <strong>regulatory recovery validation</strong>.</p>
+
+        <p>We exist because the gap between what organizations believe about their data protection and what is actually true has never been wider. Most enterprises assume their backups work, their encryption will hold, and their recovery procedures are current. Our audits consistently show otherwise.</p>
+
+        <h3>What We Do</h3>
+
+        <p>CryoVault provides advisory and audit services across three interconnected pillars:</p>
+
+        <ul>
+            <li><strong><a href="/services/post-quantum-ready.html">Post-Quantum Readiness:</a></strong> We help organizations migrate to hybrid HSM and key-management architectures that protect data against both classical and quantum threats — using NIST-standardized PQC algorithms (ML-KEM, ML-DSA) alongside existing cryptography during the transition period.</li>
+            <li><strong><a href="/services/cold-storage.html">Verifiable Cold Storage:</a></strong> We design and validate air-gapped and near-air-gapped retention architectures with cryptographic integrity verification, zero-data-drift monitoring, and automated recovery testing. Your vaulted data should be provably intact and restorable, not merely present.</li>
+            <li><strong><a href="/services/cyber-resilience-audit.html">Cyber-Resilience Audits:</a></strong> We evaluate vaulting architecture, recovery procedures, and compliance posture against SEC, NIS2, DORA, and sector-specific frameworks. The audit measures Time to Clean Restore and produces evidence packages suitable for regulators, insurers, and board committees.</li>
+        </ul>
+
+        <h3>Our Approach</h3>
+
+        <p>CryoVault takes a <strong>logic-based, evidence-driven</strong> approach to cyber resilience. We do not sell fear or theoretical risk scenarios. Every recommendation is tied to a measurable condition:</p>
+
+        <ul>
+            <li>Can your data be proven unchanged since it was vaulted? (Integrity)</li>
+            <li>Can your data be restored within a defined time window? (Recoverability)</li>
+            <li>Will your encryption hold against the threat models of the next decade? (Quantum resilience)</li>
+            <li>Can you present evidence of all three to an auditor? (Compliance)</li>
+        </ul>
+
+        <p>If the answer to any of these is "we think so" rather than "we can prove it," that is the gap CryoVault closes.</p>
+
+        <h3>Who We Work With</h3>
+
+        <p>Our clients include organizations that hold high-value or long-lived data and face regulatory scrutiny over its protection:</p>
+
+        <ul>
+            <li>Financial services firms and digital asset custodians</li>
+            <li>Healthcare organizations managing protected health information</li>
+            <li>Government contractors and defense-adjacent enterprises</li>
+            <li>Critical infrastructure operators under NIS2 and DORA</li>
+            <li>Any enterprise managing data with secrecy requirements beyond 10 years</li>
+        </ul>
+
+        <h3>Why 2026 Is the Inflection Point</h3>
+
+        <p>Three forces converge in 2026 that make cyber resilience a board-level priority:</p>
+
+        <ol>
+            <li><strong>Post-quantum standards are finalized.</strong> NIST has published FIPS 203, 204, and 205. Federal agencies are mandated to begin migration. Private-sector enterprises face growing audit pressure to demonstrate quantum-aware cryptographic risk management.</li>
+            <li><strong>Regulatory enforcement is tightening.</strong> SEC cyber resilience rules, NIS2 enforcement, and DORA requirements create a compliance landscape where demonstrated recovery capability — not just documented policy — is the standard.</li>
+            <li><strong>Autonomous cyber threats are accelerating.</strong> AI-powered attack tools, automated ransomware campaigns targeting backup infrastructure, and supply-chain compromises make recovery architecture a primary defense layer, not a last resort.</li>
+        </ol>
+
+        <div class="audit-strip">
+            Ready to close the gap? <a href="/contact.html" style="color: #bfdbfe; font-weight: 600;">Request a crypto security audit</a>.
+        </div>
     </main>
     <footer>
         <nav class="site-nav" aria-label="Footer">
