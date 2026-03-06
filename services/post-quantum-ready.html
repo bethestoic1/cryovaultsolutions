@@ -4,23 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#020617">
-    <meta name="description" content="Post-quantum ready architecture for 2026: NIST PQC, hybrid HSM migration, and long-term data protection against quantum decryption.">
+    <meta name="description" content="Post-quantum ready architecture for enterprises in 2026: NIST PQC migration, hybrid HSM key management, CRYSTALS-Kyber and Dilithium implementation, and long-term data protection against quantum decryption.">
+    <link rel="canonical" href="https://cryovaultsolutions.com/services/post-quantum-ready.html">
+    <meta property="og:title" content="Post-Quantum Ready Architecture | CryoVault Solutions">
+    <meta property="og:description" content="NIST PQC migration, hybrid HSM key management, and long-term data protection against quantum decryption for enterprises.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cryovaultsolutions.com/services/post-quantum-ready.html">
+    <meta property="og:image" content="https://cryovaultsolutions.com/assets/logo-nobg.png">
+    <meta name="twitter:card" content="summary">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
-    <title>Post-Quantum Ready | CryoVault Solutions</title>
+    <title>Post-Quantum Ready Architecture (2026) | CryoVault Solutions</title>
     <style>
         :root { --bg-page: #020617; --bg-card: #0f172a; --border: #1e293b; --accent: #3b82f6; --strip: #1e3a8a; --text: #d1d5db; --text-bright: #f8fafc; --muted: #475569; }
         body { font-family: 'Inter', system-ui, sans-serif; line-height: 1.6; color: var(--text); max-width: 950px; margin: 0 auto; padding: 20px; background: var(--bg-page); }
         header { border-bottom: 1px solid var(--accent); padding: 40px 0; text-align: center; }
         h1 { color: var(--accent); font-size: clamp(1.5rem, 3vw, 2rem); }
+        h2 { color: var(--text-bright); margin-top: 2rem; }
+        h3 { color: var(--text-bright); margin-top: 1.5rem; }
+        h4 { color: var(--text-bright); margin-top: 1.25rem; }
         .site-nav { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin-bottom: 1.5rem; font-size: 0.9rem; }
         .site-nav a { color: var(--accent); text-decoration: none; }
         .site-nav a:hover { text-decoration: underline; }
         .main-content { background: var(--bg-card); padding: 40px; border-radius: 12px; margin-top: 20px; border: 1px solid var(--border); }
-        .audit-strip { background: var(--strip); color: #bfdbfe; padding: 15px; text-align: center; border-radius: 6px; font-weight: 500; margin-top: 24px; }
+        .audit-strip { background: var(--strip); color: #bfdbfe; padding: 15px; text-align: center; border-radius: 6px; font-weight: 500; margin-top: 28px; }
+        .info-box { background: var(--bg-page); border: 1px solid var(--border); border-radius: 8px; padding: 20px; margin: 20px 0; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--border); }
+        th { color: var(--text-bright); font-weight: 600; }
         footer { text-align: center; margin-top: 60px; font-size: 0.8rem; color: var(--muted); }
+        :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
     </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Post-Quantum Ready Architecture",
+      "provider": {
+        "@type": "Organization",
+        "name": "CryoVault Solutions",
+        "url": "https://cryovaultsolutions.com"
+      },
+      "description": "Enterprise post-quantum cryptography migration: NIST PQC standards, hybrid HSM architecture, and long-term data protection against quantum decryption.",
+      "serviceType": "Post-Quantum Cryptography Migration",
+      "areaServed": "Worldwide"
+    }
+    </script>
 </head>
 <body>
     <header>
@@ -37,17 +70,128 @@
         </nav>
     </header>
     <main class="main-content">
-        <h2>Post-Quantum Ready Architecture (2026)</h2>
-        <p>As <strong>NIST finalizes post-quantum cryptography (PQC) standards</strong> for 2026, organizations holding long-term sensitive or regulated data must plan for hybrid HSM and key-management architectures that resist future quantum decryption.</p>
-        <h3>What post-quantum readiness means for enterprises</h3>
-        <p>Today’s public-key crypto (RSA, ECC) will become vulnerable once large-scale quantum computers exist. PQC standards define replacement algorithms and migration paths. For enterprises, <strong>post-quantum readiness</strong> means:</p>
+        <h2>Post-Quantum Ready Architecture for Enterprises (2026)</h2>
+
+        <p><strong>Post-quantum cryptography (PQC)</strong> is no longer a distant concern. NIST has finalized its first set of post-quantum standards, and organizations holding long-term sensitive or regulated data must act now. The threat model is simple: adversaries can harvest encrypted data today and decrypt it once quantum computers reach sufficient scale. This is known as the <strong>"harvest now, decrypt later"</strong> attack, and it makes every year of delay a compounding risk.</p>
+
+        <p>CryoVault Solutions helps enterprises transition to <strong>hybrid HSM and key-management architectures</strong> that protect data against both classical and quantum threats — while maintaining compliance with SEC, NIS2, and industry-specific mandates.</p>
+
+        <h3>Why Post-Quantum Readiness Matters in 2026</h3>
+
+        <p>Three converging forces make 2026 the year enterprises must move from planning to execution:</p>
+
         <ul>
-            <li>Identifying long-lived data and keys that need PQC protection.</li>
-            <li>Designing <strong>hybrid HSM</strong> and key-management setups that can run classical and PQC algorithms during transition.</li>
-            <li>Planning key rotation and vaulting so you can prove compliance and integrity as standards evolve.</li>
+            <li><strong>NIST PQC standardization is complete.</strong> FIPS 203 (ML-KEM, based on CRYSTALS-Kyber), FIPS 204 (ML-DSA, based on CRYSTALS-Dilithium), and FIPS 205 (SLH-DSA, based on SPHINCS+) are finalized. Federal agencies and their contractors are required to begin migration. Private-sector enterprises face growing pressure from auditors, insurers, and regulators.</li>
+            <li><strong>Harvest-now-decrypt-later is an active threat.</strong> Nation-state actors are collecting encrypted traffic at scale. Data with a secrecy requirement beyond 10 years — healthcare records, financial instruments, intellectual property, custody keys — is already at risk.</li>
+            <li><strong>Regulatory mandates reference quantum resilience.</strong> The SEC's cyber resilience rules, NIS2 in the EU, and sector-specific frameworks (DORA for financial services, HIPAA security updates) increasingly expect organizations to demonstrate forward-looking cryptographic risk management.</li>
         </ul>
-        <h3>How we help</h3>
-        <p>CryoVault helps you align vaulting and key storage with 2026 PQC timelines—so your architecture is audit-ready and your data remains protected against both current and future threats.</p>
+
+        <h3>What NIST PQC Standards Mean for Your Infrastructure</h3>
+
+        <p>The finalized NIST standards define three primary algorithms that will replace or supplement current public-key cryptography:</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Standard</th>
+                    <th>Algorithm</th>
+                    <th>Use Case</th>
+                    <th>Replaces</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>FIPS 203 (ML-KEM)</td>
+                    <td>CRYSTALS-Kyber</td>
+                    <td>Key encapsulation / key exchange</td>
+                    <td>RSA key exchange, ECDH</td>
+                </tr>
+                <tr>
+                    <td>FIPS 204 (ML-DSA)</td>
+                    <td>CRYSTALS-Dilithium</td>
+                    <td>Digital signatures</td>
+                    <td>RSA signatures, ECDSA</td>
+                </tr>
+                <tr>
+                    <td>FIPS 205 (SLH-DSA)</td>
+                    <td>SPHINCS+</td>
+                    <td>Stateless hash-based signatures</td>
+                    <td>Backup signature scheme</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>For enterprises, this means every system that uses public-key cryptography — TLS connections, code signing, document signing, key wrapping, vault encryption, certificate authorities — needs a migration path.</p>
+
+        <h3>Hybrid HSM Architecture: The Migration Path</h3>
+
+        <p>A full cutover to PQC algorithms is not practical overnight. The recommended approach is a <strong>hybrid architecture</strong> that runs classical and post-quantum algorithms in parallel:</p>
+
+        <div class="info-box">
+            <p><strong>How hybrid HSM works:</strong> A hybrid key-management setup generates and stores both a classical key pair (e.g., ECDSA P-384) and a PQC key pair (e.g., ML-DSA-65) for each protected asset. Encryption and signing operations use both algorithms, and verification succeeds only if both pass. This ensures protection even if one algorithm is later found to be vulnerable.</p>
+        </div>
+
+        <p>Key components of a hybrid HSM migration:</p>
+
+        <ul>
+            <li><strong>HSM firmware upgrades:</strong> Hardware security modules must support PQC algorithms. Leading vendors (Thales Luna, Entrust nShield, AWS CloudHSM, Azure Managed HSM) are shipping PQC-capable firmware. If your HSMs cannot be upgraded, this is the trigger for hardware refresh.</li>
+            <li><strong>Dual key generation and storage:</strong> Key ceremonies must produce both classical and PQC key pairs. Key storage — whether in HSM, vault, or cold storage — must accommodate the larger key sizes that PQC algorithms require (ML-KEM public keys are ~1,568 bytes vs. 32 bytes for X25519).</li>
+            <li><strong>Certificate and PKI updates:</strong> Internal certificate authorities must issue hybrid certificates. TLS configurations must support hybrid key exchange (e.g., X25519Kyber768). Browser and client compatibility must be tested.</li>
+            <li><strong>Vaulted data re-encryption:</strong> Long-term cold storage and immutable vaults encrypted with classical-only keys should be re-encrypted or re-wrapped with hybrid keys. This is where CryoVault's <a href="/services/cold-storage.html">cold storage protocols</a> intersect with PQC migration.</li>
+            <li><strong>Key rotation policy updates:</strong> Rotation schedules, backup procedures, and disaster recovery playbooks must account for hybrid key pairs.</li>
+        </ul>
+
+        <h3>The 5-Step Post-Quantum Migration Roadmap</h3>
+
+        <p>CryoVault follows a structured migration process designed for enterprises with existing compliance obligations:</p>
+
+        <ol>
+            <li><strong>Cryptographic inventory:</strong> Identify every system, protocol, and data store that uses public-key cryptography. Classify by data sensitivity and required secrecy lifetime. Prioritize assets where secrecy must extend beyond 2030.</li>
+            <li><strong>Risk assessment:</strong> Map each system to the harvest-now-decrypt-later threat model. Determine which assets are most exposed and which have the longest re-encryption timelines.</li>
+            <li><strong>Architecture design:</strong> Design hybrid HSM and key-management architecture. Select PQC algorithms appropriate for each use case (ML-KEM for key exchange, ML-DSA for signatures). Specify HSM hardware requirements and vendor selection.</li>
+            <li><strong>Phased implementation:</strong> Begin with highest-risk, highest-impact systems. Migrate key exchange first (TLS, VPN), then signing (certificates, code signing), then vaulted data re-encryption. Test recovery and restore procedures at each phase.</li>
+            <li><strong>Validation and audit:</strong> Verify that hybrid implementations produce correct results. Document compliance evidence for SEC, NIS2, and sector-specific auditors. Test <a href="/services/cyber-resilience-audit.html">Time to Clean Restore</a> with PQC-protected vaults.</li>
+        </ol>
+
+        <h3>Common Mistakes in PQC Migration</h3>
+
+        <p>From our advisory work, the most frequent errors enterprises make:</p>
+
+        <ul>
+            <li><strong>Waiting for "quantum computers to arrive"</strong> — The harvest-now-decrypt-later threat means the window for protection is closing now, not when quantum hardware matures.</li>
+            <li><strong>Assuming software-only key management is sufficient</strong> — Software key stores lack the tamper-resistance guarantees that regulators increasingly expect. HSM-backed key management is the baseline for audit-ready PQC deployment.</li>
+            <li><strong>Ignoring key size implications</strong> — PQC keys and signatures are significantly larger than classical equivalents. Storage, bandwidth, and performance must be tested under realistic workloads.</li>
+            <li><strong>Treating PQC as an IT-only project</strong> — PQC migration touches legal (contract obligations), compliance (regulatory evidence), procurement (HSM hardware), and operations (key ceremonies, DR procedures). It requires executive sponsorship.</li>
+            <li><strong>Skipping recovery validation</strong> — Migrating to PQC without testing that vaulted data can be restored under the new architecture defeats the purpose. Recovery testing must be part of every phase.</li>
+        </ul>
+
+        <h3>Who Needs Post-Quantum Readiness?</h3>
+
+        <p>Any organization that meets one or more of these criteria should be actively planning PQC migration:</p>
+
+        <ul>
+            <li>Holds data with secrecy requirements beyond 10 years (healthcare, legal, financial, IP)</li>
+            <li>Subject to SEC, NIS2, DORA, HIPAA, or federal compliance mandates</li>
+            <li>Operates internal certificate authorities or PKI infrastructure</li>
+            <li>Uses HSMs for key management, code signing, or document signing</li>
+            <li>Custodians of digital assets, cryptocurrency, or tokenized securities</li>
+            <li>Government contractors or defense-adjacent enterprises</li>
+        </ul>
+
+        <h3>Frequently Asked Questions</h3>
+
+        <h4>How long does a PQC migration take?</h4>
+        <p>For a mid-size enterprise, plan for 12-24 months from cryptographic inventory to full hybrid deployment. The first phase (inventory and risk assessment) typically takes 4-8 weeks. Early movers gain compliance advantage and reduce the risk of rushed implementation under regulatory pressure.</p>
+
+        <h4>Do we need new HSM hardware?</h4>
+        <p>It depends on your current HSMs. Recent models from Thales, Entrust, and cloud providers support PQC via firmware updates. Older hardware may require replacement. CryoVault's assessment includes HSM readiness evaluation.</p>
+
+        <h4>What about performance impact?</h4>
+        <p>ML-KEM (Kyber) key encapsulation is actually faster than classical ECDH for most workloads. ML-DSA (Dilithium) signatures are larger but generation speed is comparable. The main impact is on bandwidth and storage due to larger key and signature sizes — which matters most for high-volume TLS and certificate operations.</p>
+
+        <h4>Is post-quantum readiness required by regulation?</h4>
+        <p>Not yet as an explicit mandate for most private-sector organizations. However, SEC cyber resilience rules, NIS2, and DORA all require organizations to demonstrate forward-looking risk management for cryptographic threats. Auditors are beginning to ask about PQC preparedness, and federal contractors face direct NIST compliance requirements.</p>
+
         <div class="audit-strip">
             Is your vaulting architecture post-quantum ready? <a href="/contact.html" style="color: #bfdbfe; font-weight: 600;">Request a crypto security audit</a>.
         </div>

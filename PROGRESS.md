@@ -13,6 +13,19 @@
 - [x] Create pillar pages: `services/post-quantum-ready.html`, `services/cold-storage.html`, `services/cyber-resilience-audit.html`
 - [x] Create `about.html`, `contact.html`
 - [x] Create blog: `blog/index.html` and first post `blog/post-quantum-cryptography-migration-2026.html`
+- [x] Deployed to main via merge of `feature/new-pages` branch
+- [x] **Expand all service pages to 1,500+ words** with detailed content, tables, FAQs, internal links
+- [x] **Expand about.html to 500+ words** with mission, approach, who we serve, why 2026
+- [x] **Expand blog post (PQC migration) to 2,000+ words** with HNDL threat model, NIST standards table, hybrid HSM details, 6-step roadmap, common mistakes
+- [x] **Add technical SEO to all pages:** canonical tags, Open Graph meta, Twitter card, favicon links, structured data (Service schema on services, Article schema on blog posts, Organization schema on homepage/about)
+- [x] **Re-add favicon `<link>` tags** on all pages (files exist at root)
+- [x] **Expand homepage content** with deeper "why audit" sections (quantum threat, silent backup failure, regulatory proof)
+- [x] **Expand contact.html** with "what to expect" section
+- [x] **Create 4 new blog posts:** best-enterprise-cold-storage-2026, sec-cyber-resilience-recovery-validation-2026, time-to-clean-restore-2026, nis2-data-vault-compliance-checklist-2026
+- [x] **Update blog/index.html** with all 5 posts, excerpts, and read times
+- [x] **Update sitemap.xml** with `<lastmod>` tags and all 12 URLs
+- [x] **Update sitemap.txt** with all 12 URLs
+- [x] Add CLAUDE.md
 - [x] Add PROGRESS.md (this file)
 
 ---
@@ -25,11 +38,11 @@
 
 ## Next (do in order when continuing)
 
-1. **Deploy and GSC:** Deploy the site, then in Google Search Console: submit the updated sitemap (Sitemaps → add sitemap URL), and use URL Inspection → Request indexing for key new URLs (e.g. `/services/post-quantum-ready.html`, `/blog/post-quantum-cryptography-migration-2026.html`).
-2. **Add favicon assets (optional):** When you have favicon-32x32.png, favicon-16x16.png, apple-touch-icon.png at repo root, re-add the three `<link>` tags in `index.html` (and copy the same into other pages if they use a shared head).
-3. **Second blog post:** Create `blog/best-cold-storage-practices-2026.html` (or next from AUDIT-GSC-AFFILIATE.md §5). Add URL to `sitemap.txt` and `sitemap.xml`.
-4. **Affiliate programs:** Sign up for 1–2 (e.g. Backblaze, Wasabi, or Drata/Vanta). Add a “Recommended tools” or “Partners” section in footer or on relevant service/blog pages; insert affiliate links where natural.
-5. **Ongoing:** Publish 1–2 blog posts per month from the Content Ideas list in the audit; add each new URL to sitemaps and request indexing in GSC.
+1. **Deploy:** Commit all changes to main, push. In GSC: re-submit sitemap, request indexing for new blog post URLs.
+2. **Affiliate programs:** Sign up for 1–2 recurring programs (e.g. Drata/Vanta 20-25% recurring, Backblaze B2 10-20% recurring). Add a "Recommended Tools" section on relevant service/blog pages with affiliate links where natural.
+3. **Authority signals:** Create LinkedIn company page, share blog posts. Submit to cybersecurity directories. Add social links to Organization schema.
+4. **Ongoing content:** Publish 1–2 blog posts per month. Next candidates from AUDIT-GSC-AFFILIATE.md §5: "Hybrid HSM Buyer's Guide 2026", "What Is a Crypto Security Audit? (Enterprise Edition)".
+5. **llms.txt update:** Update `llms.txt` to reflect expanded services and blog content.
 
 ---
 
@@ -48,16 +61,22 @@
 
 | Path | Purpose |
 |------|---------|
-| `index.html` | Homepage; FAQ schema updated |
-| `about.html` | About page |
-| `contact.html` | Contact (links to Tally form) |
-| `services/post-quantum-ready.html` | Pillar: Post-quantum ready |
-| `services/cold-storage.html` | Pillar: Cold storage |
-| `services/cyber-resilience-audit.html` | Pillar: Cyber-resilience audit |
-| `blog/index.html` | Blog listing |
-| `blog/post-quantum-cryptography-migration-2026.html` | First blog post |
-| `sitemap.txt` | URL list (GSC) |
-| `sitemap.xml` | XML sitemap (GSC) |
-| `robots.txt` | Already references sitemap |
+| `index.html` | Homepage; FAQ + Organization schema, Tally form, expanded content |
+| `about.html` | About page; Organization schema, expanded |
+| `contact.html` | Contact (Tally form), expanded |
+| `services/post-quantum-ready.html` | Pillar: Post-quantum ready (1,500+ words, Service schema) |
+| `services/cold-storage.html` | Pillar: Cold storage (1,500+ words, Service schema) |
+| `services/cyber-resilience-audit.html` | Pillar: Cyber-resilience audit (1,500+ words, Service schema) |
+| `blog/index.html` | Blog listing (5 posts with excerpts) |
+| `blog/post-quantum-cryptography-migration-2026.html` | Blog: PQC migration guide (2,000+ words, Article schema) |
+| `blog/best-enterprise-cold-storage-2026.html` | Blog: Cold storage comparison (1,500+ words, Article schema) |
+| `blog/sec-cyber-resilience-recovery-validation-2026.html` | Blog: SEC recovery checklist (1,500+ words, Article schema) |
+| `blog/time-to-clean-restore-2026.html` | Blog: TTCR explainer (1,500+ words, Article schema) |
+| `blog/nis2-data-vault-compliance-checklist-2026.html` | Blog: NIS2 vault checklist (1,500+ words, Article schema) |
+| `sitemap.txt` | URL list — 12 URLs |
+| `sitemap.xml` | XML sitemap with lastmod — 12 URLs |
+| `robots.txt` | References sitemap.xml and sitemap.txt |
+| `llms.txt` | AI-readable site summary |
 | `AUDIT-GSC-AFFILIATE.md` | Full audit and content ideas |
 | `PROGRESS.md` | This progress file |
+| `CLAUDE.md` | Claude Code project guidance |
