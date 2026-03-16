@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MZVBJJMRQ9"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-MZVBJJMRQ9');
+    </script>
+    <title>FIPS 140-3 HSM Audit Checklist: Sept 2026 Compliance (PQC Ready)</title>
+    <meta name="description" content="Is your HSM ready for the FIPS 140-3 mandatory transition in Sept 2026? Use our hardware audit checklist for Post-Quantum Cryptography (PQC) readiness.">
+    <link rel="canonical" href="https://cryovaultsolutions.com/blog/fips-140-3-hsm-audit-checklist-2026.html">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --gold: #d4af37; --bg: #0a0a0c; --card: #151518; }
+        body { font-family: 'Inter', sans-serif; background: var(--bg); color: #c9d1d9; line-height: 1.8; }
+        .container { max-width: 850px; margin: 0 auto; padding: 60px 24px; }
+        .header { border-bottom: 2px solid var(--gold); padding-bottom: 40px; margin-bottom: 60px; }
+        h1 { font-family: 'Crimson Pro', serif; font-size: 3rem; color: #fff; line-height: 1.1; margin: 0; }
+        .meta { color: var(--gold); font-weight: 700; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 2px; margin-bottom: 12px; display: block; }
+        h2 { font-family: 'Crimson Pro', serif; font-size: 2rem; color: #fff; margin-top: 50px; }
+        .audit-card { background: var(--card); border: 1px solid #333; padding: 32px; border-radius: 4px; margin: 32px 0; border-left: 4px solid var(--gold); }
+        .audit-card h3 { margin-top: 0; color: var(--gold); font-size: 1.3rem; }
+        .checklist-item { display: flex; align-items: flex-start; margin-bottom: 20px; }
+        .checkbox { width: 20px; height: 20px; border: 2px solid var(--gold); border-radius: 4px; margin-right: 15px; margin-top: 4px; flex-shrink: 0; }
+        .highlight { background: rgba(212, 175, 55, 0.1); color: var(--gold); padding: 2px 6px; border-radius: 4px; font-weight: 600; }
+        .cta-section { background: var(--card); border: 1px solid var(--gold); padding: 60px; text-align: center; margin-top: 80px; }
+        .btn { display: inline-block; background: var(--gold); color: #000; padding: 16px 32px; font-weight: 700; text-decoration: none; text-transform: uppercase; letter-spacing: 1px; margin-top: 24px; }
+        footer { margin-top: 100px; padding: 40px; border-top: 1px solid #333; text-align: center; color: #666; font-size: 0.9rem; }
+        a { color: var(--gold); text-decoration: none; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <span class="meta">Compliance Audit · March 2026</span>
+            <h1>The FIPS 140-3 HSM Audit Checklist</h1>
+            <p style="font-size: 1.2rem; color: #8b949e;">Why the September 2026 Deadline is the Absolute Wall for Enterprise Key Management.</p>
+        </div>
+
+        <p>If your enterprise infrastructure relies on Hardware Security Modules (HSMs) for root-of-trust, you are facing a monumental compliance wall. On <strong>September 21, 2026</strong>, the FIPS 140-2 validation standard will officially sunset. After this date, any new federal procurement or highly regulated contract will require <strong>FIPS 140-3 validated modules</strong>.</p>
+
+        <p>This is not just a paperwork update. FIPS 140-3 introduces strict requirements for <span class="highlight">Post-Quantum Cryptography (PQC) readiness</span> and physical security. Use our checklist below to audit your current vault architecture before the Q3 deadline.</p>
+
+        <div class="audit-card">
+            <h3>1. Physical Security & Level 3 Compliance</h3>
+            <div class="checklist-item"><div class="checkbox"></div><div>Does your module support <strong>Active Zeroization</strong> on tamper detection as per the new FIPS 140-3 Level 3 spec?</div></div>
+            <div class="checklist-item"><div class="checkbox"></div><div>Is the module's enclosure opaque enough to meet the new 2026 visual inspection criteria?</div></div>
+        </div>
+
+        <div class="audit-card">
+            <h3>2. Post-Quantum Algorithm Support</h3>
+            <div class="checklist-item"><div class="checkbox"></div><div>Does the HSM firmware natively support <strong>ML-KEM</strong> (FIPS 203) for key encapsulation?</div></div>
+            <div class="checklist-item"><div class="checkbox"></div><div>Does the module support <strong>ML-DSA</strong> (FIPS 204) for digital signatures without an external hardware refresh?</div></div>
+            <div class="checklist-item"><div class="checkbox"></div><div>Can the HSM handle <strong>large PQC key sizes</strong> (often 10x larger than RSA/ECC) without a massive latency hit?</div></div>
+        </div>
+
+        <div class="audit-card">
+            <h3>3. Cryptographic Agility Audit</h3>
+            <div class="checklist-item"><div class="checkbox"></div><div>Does your vault software have an <strong>abstraction layer</strong> that allows for hybrid signing (Classical + PQC)?</div></div>
+            <div class="checklist-item"><div class="checkbox"></div><div>Is there a documented <strong>migration path</strong> for your current FIPS 140-2 keys into 140-3 partitions?</div></div>
+        </div>
+
+        <h2>The Risk of Non-Compliance</h2>
+        <p>Entities failing to transition by 2026 risk losing eligibility for federal contracts and SEC-regulated financial services. Beyond compliance, the "Harvest Now, Decrypt Later" threat means any data protected by non-FIPS 140-3 modules is already at risk from future quantum adversaries.</p>
+
+        <div class="cta-section">
+            <h2>Need a Formal PQC Audit?</h2>
+            <p>Our senior consultants perform on-site HSM and vault audits to ensure your 2026 roadmap meets the new NIST and FIPS mandates.</p>
+            <a href="../index.html" class="btn">Request a Resilience Audit →</a>
+        </div>
+
+        <h2>Summary</h2>
+        <p>2026 is the year of the hard transition. If your HSM vendor cannot provide a clear path to FIPS 140-3 and PQC support by September, you are sitting on technical debt that could ground your operations. Start your audit today.</p>
+
+        <p>For a high-level overview of the migration, see our <a href="post-quantum-pqc-migration-checklist-2026.html">Enterprise PQC Checklist</a>.</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 CryoVault Solutions | <a href="../index.html">Sovereign Vaulting</a> | <a href="index.html">Resilience Blog</a></p>
+    </footer>
+</body>
+</html>
