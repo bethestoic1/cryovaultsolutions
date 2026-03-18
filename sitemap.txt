@@ -17,6 +17,8 @@ https://cryovaultsolutions.com/blog/my-hot-wallet-got-drained-2026.html
 https://cryovaultsolutions.com/blog/blind-signing-risk-2026.html
 https://cryovaultsolutions.com/blog/no-seed-phrase-cold-wallet-2026.html
 https://cryovaultsolutions.com/blog/ledger-data-breach-switch-2026.html
+https://cryovaultsolutions.com/blog/tangem-yield-rewards-2026.html
+https://cryovaultsolutions.com/blog/tangem-mobile-wallet-features-2026.html
 https://cryovaultsolutions.com/hardware/tangem-no-seed-phrase.html
 https://cryovaultsolutions.com/hardware/ledger-clear-signing.html
 https://cryovaultsolutions.com/hardware/trezor-open-source-security.html
