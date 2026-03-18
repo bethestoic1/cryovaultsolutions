@@ -25,6 +25,11 @@
 - [x] **Update blog/index.html** with all 5 posts, excerpts, and read times
 - [x] **Update sitemap.xml** with `<lastmod>` tags and all 12 URLs
 - [x] **Update sitemap.txt** with all 12 URLs
+- [x] Create 4 high-velocity hardware "Bridge Pages" (Direct Response Architect): `hardware/tangem-no-seed-phrase.html`, `hardware/ledger-clear-signing.html`, `hardware/trezor-open-source-security.html`, `hardware/onekey-premium-experience.html`
+- [x] Integrate provided affiliate links (Ledger, Trezor, OneKey, Tangem) into the new hardware pages
+- [x] Link hardware reviews from the Homepage and the Cold Storage service page
+- [x] Update sitemap.txt and sitemap.xml with the 4 new hardware URLs (Total: 16 URLs)
+- [x] Update PROGRESS.md and CLAUDE.md references
 - [x] Add CLAUDE.md
 - [x] Add PROGRESS.md (this file)
 
