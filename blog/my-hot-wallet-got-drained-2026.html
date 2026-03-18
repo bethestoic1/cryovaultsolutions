@@ -71,8 +71,8 @@
 
         <div class="danger-box">
             <h4>This Isn't a Hack—It's Worse</h4>
-            <p>Your browser wallet (MetaMask, Phantom, Coinbase Wallet) didn't "get hacked." <strong>You signed something you couldn't verify.</strong> You approved a transaction on a phone screen, but your browser never showed you what was actually happening. This is called "blind signing," and it's the reason 94% of "wallet hacks" succeed.</p>
-            <p><strong>The good news:</strong> If you move to a hardware wallet with a real screen, this becomes impossible.</p>
+            <p>Your browser wallet (MetaMask, Phantom, Coinbase Wallet) didn't "get hacked." <strong>You signed something you couldn't verify.</strong> You approved a transaction on a phone screen, but your browser never showed you what was actually happening. This is called "blind signing," and it is a common root cause in wallet drain incidents.</p>
+            <p><strong>The good news:</strong> A hardware wallet with clear on-device signing can significantly reduce this risk.</p>
         </div>
 
         <h2>What Actually Happened to Your Wallet</h2>
@@ -92,17 +92,17 @@
         <ul class="bullets">
             <li><strong>Browser extension wallets live in an untrusted environment.</strong> Your browser can be compromised. Clipboard malware can replace addresses. Extensions can be faked.</li>
             <li><strong>Your phone shows a summary, not the actual transaction.</strong> That "approve" button is lying to you. The real transaction is in hex code you can't read.</li>
-            <li><strong>There's no "approve and then move" delay.</strong> The moment you approve, the attacker's bot sweeps immediately. You never see it coming.</li>
+            <li><strong>There's no "approve and then move" delay.</strong> The moment you approve, the attacker's bot sweeps immediately. Many users do not recognize it in time.</li>
             <li><strong>Phishing is trivial.</strong> One misclicked link and you're connecting to a fake dApp. Your wallet did exactly what you asked. It was what you asked for that was malicious.</li>
         </ul>
 
-        <p><strong>A hot wallet is a loaded gun sitting on a table.</strong> It's not a question of "if" you get drained—it's "when." Every DeFi user with a browser wallet has a ticking clock.</p>
+        <p><strong>A hot wallet is a loaded gun sitting on a table.</strong> Risk grows when users repeatedly approve opaque transactions in browser wallets.</p>
 
         <h2>The Solution: Cold Storage With a Real Screen</h2>
 
         <p>A hardware wallet solves this with <strong>one simple rule:</strong> Nothing moves without a physical button press on a screen that shows the actual transaction.</p>
 
-        <p>You can't be phished. You can't be blind-signed. You can't be "just clicking approve." You have to physically press a button on the device itself, and the device shows you exactly what you're signing.</p>
+        <p>You can still be targeted, but clear on-device confirmation lowers phishing and blind-signing risk substantially. You have to physically press a button on the device itself, and the device shows you exactly what you're signing.</p>
 
         <h2>Which Hardware Wallet Should You Buy?</h2>
 
@@ -112,7 +112,7 @@
             <div class="wallet-solution">
                 <h3>Ledger Stax</h3>
                 <span class="best-for">Best for Daily DeFi</span>
-                <p>The E-Ink display is large, fast, and shows transactions clearly. Ledger's Stax gives you a phone-like experience with a hardware wallet's security. <strong>$399</strong></p>
+                <p>The E-Ink display is large, fast, and shows transactions clearly. Ledger's Stax gives you a phone-like experience with a hardware wallet's security. <strong>Pricing varies by region and promotions</strong></p>
                 <ul class="bullets">
                     <li>Massive E-Ink screen for clear signing</li>
                     <li>Bluetooth + USB-C</li>
@@ -125,7 +125,7 @@
             <div class="wallet-solution">
                 <h3>Trezor Safe 5</h3>
                 <span class="best-for">Best for Paranoid Users</span>
-                <p>Open-source firmware. 100% auditable. No company can force an update. If you don't trust Ledger or anyone else, Trezor is the only hardware wallet that lets you verify everything. <strong>$129</strong></p>
+                <p>Open-source firmware with broad community review. No company can force an update. If you don't trust Ledger or anyone else, Trezor is the only hardware wallet that lets you verify everything. <strong>Pricing varies by region and promotions</strong></p>
                 <ul class="bullets">
                     <li>Fully open-source code</li>
                     <li>Community-auditable updates</li>
@@ -138,7 +138,7 @@
             <div class="wallet-solution">
                 <h3>Tangem Wallet</h3>
                 <span class="best-for">Best for Simplicity & Longevity</span>
-                <p>Looks like a credit card. Uses NFC tap (no screen to verify on the device itself). No battery, no ports, no firmware updates ever. If you want the most durable, simplest cold storage, Tangem is it. One tap, and you're signing. <strong>$44–$144</strong></p>
+                <p>Looks like a credit card. Uses NFC tap (no screen to verify on the device itself). No battery, no ports, no firmware updates ever. If you want the most durable, simplest cold storage, Tangem is it. One tap, and you're signing. <strong>Pricing varies by package and region</strong></p>
                 <ul class="bullets">
                     <li>Credit card form factor (no screen)</li>
                     <li>NFC tap to sign</li>
@@ -151,7 +151,7 @@
             <div class="wallet-solution">
                 <h3>OneKey Pro</h3>
                 <span class="best-for">Best for Multi-Chain DeFi</span>
-                <p>Huge screen for complex smart contract calls. If you're using Solana, Ethereum, and multiple L2s, OneKey's display turns hex code into human language. You actually understand what you're signing. <strong>$278</strong></p>
+                <p>Huge screen for complex smart contract calls. If you're using Solana, Ethereum, and multiple L2s, OneKey's display turns hex code into human language. You actually understand what you're signing. <strong>Pricing varies by region and promotions</strong></p>
                 <ul class="bullets">
                     <li>Massive display for clarity</li>
                     <li>Multi-chain DeFi support</li>
@@ -219,10 +219,10 @@
                 </tr>
                 <tr>
                     <td><strong>Price</strong></td>
-                    <td>$399</td>
-                    <td>$129</td>
-                    <td>$44–$144</td>
-                    <td>$278</td>
+                    <td>Varies</td>
+                    <td>Varies</td>
+                    <td>Varies</td>
+                    <td>Varies</td>
                 </tr>
             </tbody>
         </table>
@@ -234,24 +234,24 @@
             <li>Move any remaining funds from your hot wallet to the new device (test with small amount first)</li>
             <li>Next time someone sends you a link, you test it on the hardware wallet screen before approving</li>
             <li>If the transaction is lying, the real code shows on the screen, and you see it immediately</li>
-            <li>You never get drained again</li>
+            <li>You materially reduce the chance of another drain event</li>
         </ul>
 
         <p><strong>Scenario 2: You keep using MetaMask.</strong></p>
         <ul class="bullets">
-            <li>You'll get drained again (statistically within 6 months)</li>
+            <li>You remain exposed to repeated approval-based risks</li>
             <li>You'll post "got hacked" on Reddit asking how to recover</li>
-            <li>The answer is always "move to cold storage"</li>
+            <li>A common recommendation is to move long-term holdings to hardware-backed storage</li>
             <li>You'll wish you'd done it today instead of 6 months and thousands of dollars ago</li>
         </ul>
 
-        <p><strong>The math is simple:</strong> A hardware wallet costs $50–$300. The average drain is $5,000–$50,000. The probability of getting drained if you keep a hot wallet is 94% within 2 years.</p>
+        <p><strong>The risk tradeoff is simple:</strong> hardware wallets have an upfront cost, while a single approval mistake can cause outsized losses. Use position sizing, hardware signing, and strict transaction hygiene.</p>
 
         <p><strong>Buy the hardware wallet today.</strong></p>
 
         <div class="cta-block">
             <h2>Stop Waiting for the Next Drain</h2>
-            <p>Your hot wallet isn't secure. It never was. Pick one of the four options above, buy it today, and move your funds to the device by tomorrow.</p>
+            <p>Hot wallets are convenient but carry higher operational risk than hardware-backed signing. Pick one of the four options above, buy it today, and move your funds to the device by tomorrow.</p>
             <p style="margin-top: 24px;">You can't get drained if your approval happens on a physical button press.</p>
             <p style="margin-top: 24px;">
                 <a href="https://ledger.com/?r=260d41231c91">Ledger</a> •
@@ -265,6 +265,10 @@
 
         <div class="disclosure">
             <p><strong>Disclosure:</strong> We earn affiliate commissions on hardware wallet purchases through these links. We recommend these specific wallets because they're the best available for security, not because of the commission.</p>
+        </div>
+    
+        <div class="disclosure">
+            <p><strong>Freshness note:</strong> Features, pricing, campaign rewards, supported assets/networks, and compliance interpretations can change. Verify current details with official vendor documentation before making operational or investment decisions.</p>
         </div>
     </div>
 </body>
