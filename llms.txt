@@ -2,7 +2,7 @@
 > 2026 Enterprise Cyber Resilience & Data Vaulting.
 
 ## Services
-- [Crypto Security Audit](https://cryovaultsolutions.com/): Automated logic-based hardware wallet assessment.
+- [Crypto Security Audit](https://cryovaultsolutions.com/): Logic-based hardware wallet and vaulting architecture assessment.
 - [Compliance](https://cryovaultsolutions.com/): Post-Quantum Ready hybrid HSM architectures.
 - [Recovery](https://cryovaultsolutions.com/): Verifiable immutable cold storage protocols.
 

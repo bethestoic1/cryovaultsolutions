@@ -4,7 +4,7 @@
 **Strategy:** Authority-led. Frame it as a "Compliance Mandate."
 
 ### Post Draft:
-"The NIST PQC standards are finalized, yet 70% of enterprise key management stacks are still vulnerable to 'Harvest Now, Decrypt Later' attacks. As we hit 2026, SEC and NIS2 auditors are looking for a 'Quantum-Resilient' roadmap. 
+"The NIST PQC standards are finalized, yet many enterprise key management stacks are still vulnerable to 'Harvest Now, Decrypt Later' attacks. As we hit 2026, SEC and NIS2 auditors are looking for a 'Quantum-Resilient' roadmap. 
 
 I’ve put together a technical checklist for teams auditing their HSMs and physical key governance for the post-quantum era.
 

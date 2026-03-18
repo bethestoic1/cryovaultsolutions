@@ -183,8 +183,8 @@
         <h3>Recommended Verifiable Cloud Storage</h3>
         <p>For hybrid architectures requiring immutable off-site retention, we strongly advise using cloud object storage with native S3 Object Lock and compliance-mode versioning. For audit-ready cloud vaulting, we recommend:</p>
         <ul>
-            <li><strong><a href="#" target="_blank" rel="noopener nofollow">Backblaze B2</a></strong> — Industry-leading cost-to-performance with robust Object Lock for SEC/NIS2 compliance.</li>
-            <li><strong><a href="#" target="_blank" rel="noopener nofollow">Wasabi</a></strong> — High-performance hot cloud storage with free egress and immutable buckets.</li>
+            <li><strong><a href="https://www.backblaze.com/cloud-storage" target="_blank" rel="noopener nofollow">Backblaze B2</a></strong> — Cost-effective object storage with Object Lock features that support SEC/NIS2 control requirements.</li>
+            <li><strong><a href="https://wasabi.com/" target="_blank" rel="noopener nofollow">Wasabi</a></strong> — High-performance cloud storage with immutable bucket options and egress policies that vary by vendor terms.</li>
         </ul>
 
         <h3>Hardware for Key and Asset Custody</h3>
@@ -202,7 +202,7 @@
         <p>Yes. Immutable object storage (AWS S3 Object Lock, Azure Immutable Blob Storage, GCP retention policies) provides logical cold storage with WORM guarantees. For higher isolation requirements, near-air-gap architectures using dedicated VPCs with data diode patterns achieve cloud-native cold storage. CryoVault designs hybrid architectures that span on-premises air-gapped and cloud immutable tiers.</p>
 
         <h4>What is zero-data-drift?</h4>
-        <p>Zero-data-drift is the guarantee that data stored in your vault has not changed — not by a single bit — since it was originally written. It's verified through continuous hash comparison against a tamper-evident integrity chain. If any object has drifted (due to media degradation, firmware bugs, or tampering), the drift is detected and flagged before it affects recoverability.</p>
+        <p>Zero-data-drift refers to a verification goal: data stored in your vault has not changed since it was originally written. It's measured through continuous hash comparison against a tamper-evident integrity chain. If any object drifts (due to media degradation, firmware bugs, or tampering), the drift is detected and flagged before it affects recoverability.</p>
 
         <h4>How often should recovery be tested?</h4>
         <p>At minimum, quarterly for regulated industries. CryoVault recommends monthly automated restore drills for critical data tiers, with full end-to-end recovery exercises (including Time to Clean Restore measurement) at least quarterly. Continuous automated verification (hash checks) should run on a weekly or daily cadence depending on data volume and criticality.</p>
@@ -214,10 +214,10 @@
     <div class="partners-strip">
         <span>Trusted Infrastructure Partners</span>
         <div class="partners-grid">
-            <a href="#" >Backblaze B2</a>
-            <a href="#" >Ledger Enterprise</a>
-            <a href="#" >Kinsta</a>
-            <a href="#" >Vanta</a>
+            <a href="https://www.backblaze.com/cloud-storage" target="_blank" rel="noopener nofollow">Backblaze B2</a>
+            <a href="https://www.ledger.com/enterprise" target="_blank" rel="noopener nofollow">Ledger Enterprise</a>
+            <a href="https://kinsta.com/" target="_blank" rel="noopener nofollow">Kinsta</a>
+            <a href="https://www.vanta.com/" target="_blank" rel="noopener nofollow">Vanta</a>
         </div>
     </div>
 
