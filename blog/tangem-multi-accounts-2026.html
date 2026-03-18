@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MZVBJJMRQ9"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];\n      function gtag(){dataLayer.push(arguments);}\n      gtag('js', new Date());\n      gtag('config', 'G-MZVBJJMRQ9');
+    </script>
+    <title>One Wallet, 20 Accounts: Organize Crypto Like a Bank (Without Giving Up Custody)</title>
+    <meta name="description" content="Tangem Multi-Accounts: One seed phrase, up to 20 independent accounts for DeFi, hodling, yields, and trading. Full self-custody, zero complexity.">
+    <link rel="canonical" href="https://cryovaultsolutions.com/blog/tangem-multi-accounts-2026.html">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root { --accent: #06b6d4; --bg: #0a0a0a; --surface: #171717; }
+        body { font-family: 'Outfit', sans-serif; background: var(--bg); color: #d4d4d4; line-height: 1.8; margin: 0; }
+        .article-container { max-width: 850px; margin: 0 auto; padding: 80px 24px; }
+        .pill { display: inline-block; padding: 4px 12px; border: 1px solid var(--accent); color: var(--accent); border-radius: 50px; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; margin-bottom: 24px; }
+        h1 { font-family: 'Space Grotesk', sans-serif; font-size: 3.5rem; color: #fff; line-height: 1.1; margin-bottom: 32px; }
+        h2 { font-family: 'Space Grotesk', sans-serif; font-size: 2rem; color: #fff; margin-top: 60px; border-bottom: 1px solid #262626; padding-bottom: 12px; }
+        h3 { font-family: 'Space Grotesk', sans-serif; font-size: 1.5rem; color: #fff; }
+        .problem-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin: 40px 0; }
+        .problem-card { background: var(--surface); padding: 24px; border-radius: 12px; border: 1px solid #262626; }
+        .problem-card h4 { color: var(--accent); margin-top: 0; }
+        .account-box { background: rgba(6, 182, 212, 0.05); border-left: 4px solid var(--accent); padding: 24px; margin: 40px 0; border-radius: 0 8px 8px 0; }
+        .account-box h4 { color: var(--accent); margin-top: 0; }
+        .feature-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin: 40px 0; }
+        .feature-card { background: var(--surface); padding: 24px; border-radius: 12px; border: 1px solid #262626; }
+        .feature-card h4 { color: var(--accent); margin-top: 0; font-size: 1.1rem; }
+        .use-case { background: var(--surface); padding: 24px; border-radius: 12px; border: 1px solid #262626; margin: 24px 0; }
+        .use-case h4 { color: var(--accent); margin-top: 0; }
+        .bullets { list-style: none; padding: 0; margin: 24px 0; }
+        .bullets li { padding: 12px 0 12px 28px; position: relative; }
+        .bullets li:before { content: "→"; color: var(--accent); position: absolute; left: 0; font-weight: 700; }
+        .tech-box { background: rgba(6, 182, 212, 0.1); padding: 24px; border-radius: 12px; margin: 40px 0; }
+        .tech-box h4 { color: var(--accent); margin-top: 0; }
+        .cta-block { text-align: center; background: linear-gradient(135deg, #0a2a3a 0%, #000 100%); padding: 60px; border-radius: 24px; border: 1px solid var(--accent); margin-top: 80px; }
+        .btn-primary { display: inline-block; background: var(--accent); color: #000; padding: 18px 36px; border-radius: 12px; font-weight: 700; text-decoration: none; margin-top: 24px; margin-right: 12px; font-size: 1.1rem; }
+        .btn-primary:hover { opacity: 0.9; }
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .disclosure { font-size: 0.85rem; color: #666; margin-top: 40px; text-align: center; border-top: 1px solid #262626; padding-top: 24px; }
+        .comparison-table { width: 100%; border-collapse: collapse; margin: 40px 0; }
+        .comparison-table th { background: #262626; color: #fff; padding: 16px; text-align: left; font-weight: 700; }
+        .comparison-table td { padding: 16px; border-bottom: 1px solid #262626; }
+        .comparison-table tr:hover { background: #1a1a1a; }
+        .check { color: var(--accent); font-weight: 700; }
+        .x { color: #ef4444; font-weight: 700; }
+    </style>
+</head>
+<body>
+    <div class="article-container">
+        <span class="pill">Portfolio Management</span>
+        <h1>One Wallet, 20 Accounts: Organize Crypto Like a Bank</h1>
+
+        <p style="font-size: 1.25rem; color: #a3a3a3;">You have Bitcoin for long-term holds. Ethereum for DeFi experiments. Stablecoins earning yield. And some coins you're trading. Right now, you're managing this across multiple wallets, multiple seed phrases, or (worse) a centralized exchange. Tangem's Multi-Accounts solves this: one wallet, one seed phrase, 20 independent accounts. Banking-level organization. Self-custody security.</p>
+
+        <h2>The Organization Problem: Choose Your Nightmare</h2>
+
+        <p>If you're a serious crypto user, you're doing multiple things with your assets:</p>
+
+        <div class="problem-grid">
+            <div class="problem-card">
+                <h4>Long-term hodler</h4>
+                <p>Bitcoin, Ethereum sitting untouched for 5+ years. You want this somewhere absolutely secure and separate from trading noise.</p>
+            </div>
+            <div class="problem-card">
+                <h4>DeFi experimenter</h4>
+                <p>Testing new protocols, liquidity pools, yield farms. This is volatile and experimental. It shouldn't touch your long-term stack.</p>
+            </div>
+        </div>
+
+        <div class="problem-grid">
+            <div class="problem-card">
+                <h4>Yield farmer</h4>
+                <p>Stablecoins earning 5-10% APY on Aave, Lido, or other protocols. This needs its own tracking and monitoring.</p>
+            </div>
+            <div class="problem-card">
+                <h4>Active trader</h4>
+                <p>Swapping between different coins multiple times per week. High velocity, high gas costs, high attention required.</p>
+            </div>
+        </div>
+
+        <p><strong>Your current options are all broken:</strong></p>
+
+        <ul class="bullets">
+            <li><strong>One wallet, one account:</strong> Your hodl, DeFi, yield, and trading are all mixed in one view. Impossible to manage. Can't set different approval strategies per use case.</li>
+            <li><strong>Multiple wallets:</strong> Each needs its own seed phrase. You're now managing 4+ recovery codes. Lose one, and a piece of your crypto is gone forever.</li>
+            <li><strong>Use an exchange:</strong> You solve the organization problem but move your crypto to a custodian. You own nothing. One hack, one regulatory action, and you're drained.</li>
+        </ul>
+
+        <p><strong>What if you could organize like a bank without giving up custody?</strong></p>
+
+        <h2>Multi-Accounts: One Wallet, 20 Independent Accounts</h2>
+
+        <p>Tangem's Multi-Accounts feature lets you create up to 20 separate accounts within a single wallet, all managed by a single seed phrase (or single Tangem card).</p>
+
+        <div class="account-box">
+            <h4>Here's what changes:</h4>
+            <p><strong>Account 1 (Hodl):</strong> Long-term Bitcoin and Ethereum. Rarely touched. Clear, minimalist view. No trading noise.</p>
+            <p><strong>Account 2 (DeFi Lab):</strong> Experimental yields, new protocols, risky allocations. Visually separate. Easy to track performance.</p>
+            <p><strong>Account 3 (Yield):</strong> Stablecoins earning APY. Simple, focused tracking. You know exactly how much is yielding at any moment.</p>
+            <p><strong>Account 4 (Trading):</strong> Active swaps and day-trading. High velocity. Zero confusion with long-term positions.</p>
+            <p><strong>And 16 more if you want them.</strong> One wallet. One seed phrase. One interface.</p>
+        </div>
+
+        <h2>How Multi-Accounts Actually Works</h2>
+
+        <p>This isn't just a UI trick where you filter the same addresses into different views.</p>
+
+        <p><strong>Each account is genuinely independent:</strong></p>
+
+        <ul class="bullets">
+            <li><strong>Separate addresses on every network.</strong> Account 1 has a different Ethereum address than Account 2. Your DeFi approvals go to Account 2's address, not your hodl address. If Account 2 gets rugged, Account 1 is untouched.</li>
+            <li><strong>Separate transaction history.</strong> Each account shows only its own transactions. No clutter. No confusion.</li>
+            <li><strong>Separate balances.</strong> You see the total balance across all accounts, but each account shows only its holdings. Crystal-clear portfolio segmentation.</li>
+            <li><strong>All managed under one seed phrase.</strong> This is the magic part. Mathematically, Tangem derives each account from the same master seed using BIP-44 standards (the same standard every hardware wallet uses). You backup once. You recover everything.</li>
+        </ul>
+
+        <h2>Real Use Cases: How This Changes Everything</h2>
+
+        <div class="use-case">
+            <h4>Scenario 1: The Conservative Hodler</h4>
+            <p>You have $500k in BTC and ETH. You're not touching it for 10 years. You want it somewhere absolutely secure, with zero contract interactions.</p>
+            <p><strong>Old way:</strong> One hardware wallet. You watch it accumulate, but you also see swap requests, staking offers, yield notifications that tempt you. Mental tax.</p>
+            <p><strong>Multi-Accounts way:</strong> Create an "Untouchable" account. Set it as read-only in the app. It shows your balance, nothing else. No buttons to push. No approvals to sign. Pure holding clarity.</p>
+        </div>
+
+        <div class="use-case">
+            <h4>Scenario 2: The DeFi Experimenter</h4>
+            <p>You're testing new Solana protocols, Arbitrum bridges, exotic yield strategies. You want to allocate $20k to experiments, keep $200k safe.</p>
+            <p><strong>Old way:</strong> Different hardware wallet ($150+). Different seed phrase to backup. Now managing two devices, two recovery codes, two software versions. One gets hacked? You're still down $20k.</p>
+            <p><strong>Multi-Accounts way:</strong> Create an "Experiment" account in the same Tangem card. Fund it with $20k. All WalletConnect approvals go to this account's address only. If the protocol exploits users, your main account is completely isolated. Still one seed phrase. Still one backup. Still one device.</p>
+        </div>
+
+        <div class="use-case">
+            <h4>Scenario 3: The Portfolio Manager</h4>
+            <p>You manage crypto for family members: Mom's BTC (hodl), your wife's stablecoin yields, your kids' educational allocations.</p>
+            <p><strong>Old way:</strong> Three different Tangem cards or three different seed phrases. You're managing backups for three people across three devices. Inheritance is a nightmare.</p>
+            <p><strong>Multi-Accounts way:</strong> One card. Four accounts. One seed phrase to backup. When you pass it to your family, they tap the card and can see Mom's allocation, the yields, the education fund—all separate, all clear. Inheritance is one device and one conversation about the PIN.</p>
+        </div>
+
+        <h2>The Archive System: Clean Up Without Losing Anything</h2>
+
+        <p>You want to create 20 accounts, but you'll eventually hit the limit. Tangem's archive system solves this without deleting anything:</p>
+
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h4>Archive (Not Delete)</h4>
+                <p>When you archive an account, it disappears from your main view and your total balance calculation. But all funds, all addresses, all transaction history stay intact.</p>
+            </div>
+            <div class="feature-card">
+                <h4>Restore Anytime</h4>
+                <p>Un-archive an old account whenever you want. All your history comes back. No loss of data. It's like storing a file in a hidden folder.</p>
+            </div>
+        </div>
+
+        <p>This is critical: <strong>You can keep unlimited accounts archived.</strong> You only count against the 20-account limit if the account is active. Need to free up a slot? Archive an old trading account. Restore it later. Perfect for users who experiment across market cycles.</p>
+
+        <h2>Full Feature Parity Across All Accounts</h2>
+
+        <p>Every account supports everything:</p>
+
+        <ul class="bullets">
+            <li>Send and receive crypto</li>
+            <li>Buy and sell via integrated payment rails</li>
+            <li>Swap tokens (Uniswap, 1Inch, etc.)</li>
+            <li>Connect to DApps via WalletConnect</li>
+            <li>Staking (Ethereum, Solana, Cosmos)</li>
+            <li>Yield opportunities (Aave, Lido, etc.)</li>
+            <li>Cross-account transfers (move funds between your accounts instantly)</li>
+        </ul>
+
+        <p><strong>No compromises.</strong> You're not creating "lite" accounts. Every account is fully featured. You're only organizing which addresses go where.</p>
+
+        <h2>Portability: BIP-44 Standard = Recovery Anywhere</h2>
+
+        <p>Here's what makes this genuinely self-custody:</p>
+
+        <p>Tangem uses BIP-44 standards for account derivation. This is the same standard Bitcoin, Ethereum, and every major blockchain uses. It means:</p>
+
+        <ul class="bullets">
+            <li><strong>Your accounts are recoverable on any wallet software.</strong> If Tangem disappears tomorrow, you can import your seed phrase into Ledger, Trezor, MetaMask, or any BIP-44 compatible wallet. All 20 accounts appear. All your funds appear. No lock-in.</li>
+            <li><strong>Accounts are mathematically derived from your seed.</strong> Not stored on Tangem's servers. Not proprietary. Pure cryptography.</li>
+            <li><strong>Custom tokens auto-route to the correct account.</strong> If you add a custom token to your DeFi account, Tangem's wallet automatically recognizes the derivation path and moves it there. No manual sorting.</li>
+        </ul>
+
+        <div class="tech-box">
+            <h4>The Math (If You Care)</h4>
+            <p>Tangem uses Hierarchical Deterministic wallets (BIP-32), which means it generates billions of unique keys from a single master seed using cryptographic derivation paths. Each account gets its own branch of this tree (m/44'/60'/0'/0/0 for Account 1, m/44'/60'/0'/0/1 for Account 2, etc.). Same seed. Different branches. Mathematically unique and secure.</p>
+            <p><strong>TL;DR:</strong> One seed, infinite accounts, zero lock-in.</p>
+        </div>
+
+        <h2>Multi-Accounts vs. The Alternatives</h2>
+
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th>Feature</th>
+                    <th>Tangem Multi-Accounts</th>
+                    <th>Multiple Hardware Wallets</th>
+                    <th>Centralized Exchange</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Number of Accounts</strong></td>
+                    <td>20 per wallet</td>
+                    <td>Unlimited (but need multiple devices)</td>
+                    <td>Unlimited</td>
+                </tr>
+                <tr>
+                    <td><strong>Recovery Codes to Manage</strong></td>
+                    <td><span class="check">1</span></td>
+                    <td><span class="x">1 per device</span></td>
+                    <td>1 (but custodian controls it)</td>
+                </tr>
+                <tr>
+                    <td><strong>You Own the Funds</strong></td>
+                    <td><span class="check">✓</span></td>
+                    <td><span class="check">✓</span></td>
+                    <td><span class="x">✗</span></td>
+                </tr>
+                <tr>
+                    <td><strong>Isolation Between Accounts</strong></td>
+                    <td><span class="check">✓ (separate addresses)</span></td>
+                    <td><span class="check">✓ (separate devices)</span></td>
+                    <td><span class="check">✓ (UI only)</span></td>
+                </tr>
+                <tr>
+                    <td><strong>One Interface for All</strong></td>
+                    <td><span class="check">✓</span></td>
+                    <td><span class="x">✗ (separate devices)</span></td>
+                    <td><span class="check">✓</span></td>
+                </tr>
+                <tr>
+                    <td><strong>Cost</strong></td>
+                    <td>$44-$144 (1 card)</td>
+                    <td>$130-$400 (per device)</td>
+                    <td>Free (but fees on trades)</td>
+                </tr>
+                <tr>
+                    <td><strong>Inheritance</strong></td>
+                    <td><span class="check">Simple (1 card, 1 PIN)</span></td>
+                    <td><span class="x">Complex (multiple devices)</span></td>
+                    <td><span class="x">Impossible (custodian)</span></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Who Should Use Multi-Accounts?</h2>
+
+        <ul class="bullets">
+            <li><strong>Anyone with multiple crypto strategies.</strong> If you're doing more than pure hodling, Multi-Accounts simplifies your life immediately.</li>
+            <li><strong>DeFi users managing experimental positions.</strong> Risk isolation without multiple seed phrases.</li>
+            <li><strong>Yield farmers.</strong> Keep stablecoin yields visually separate from trading or hodl positions. Clarity on APY and performance.</li>
+            <li><strong>Portfolio managers.</strong> Family allocations, client funds, personal experimental bucket—all one device, all one backup.</li>
+            <li><strong>Anyone paranoid about inheritance.</strong> One card, one PIN to hand down. Much cleaner than managing multiple devices.</li>
+        </ul>
+
+        <h2>The Bottom Line</h2>
+
+        <p>Self-custody used to mean complexity: multiple wallets, multiple seed phrases, mental overhead. Tangem's Multi-Accounts changes that.</p>
+
+        <p><strong>You can now organize your crypto the way a bank organizes money:</strong> Savings account (hodl), Money Market account (yields), Investment account (DeFi experiments), Trading account (swaps). Separate addresses. One backup. One device. One interface.</p>
+
+        <p>All while keeping 100% custody. No compromise on security. No compromise on simplicity.</p>
+
+        <div class="cta-block">
+            <h2>Organize Your Crypto. Keep Your Keys.</h2>
+            <p>Multi-Accounts is available now on Tangem mobile wallets and Tangem cards. Create up to 20 accounts. One seed phrase. Banking-level organization. Self-custody security.</p>
+            <a href="https://tangem.onelink.me/MsTz/CRYPTOVAULT" class="btn-primary">Download Tangem App (Free) →</a>
+            <a href="https://tangem.com/invite/CRYPTOVAULT" class="btn-primary">Get Tangem Card →</a>
+            <p style="margin-top: 24px; font-size: 0.9rem;"><a href="index.html">← Back to Blog</a></p>
+        </div>
+
+        <div class="disclosure">
+            <p><strong>Disclosure:</strong> We earn affiliate commissions on Tangem card purchases and wallet activity. We recommend Tangem Multi-Accounts because it solves the portfolio organization problem without custody risk, not because of the commission.</p>
+        </div>
+    </div>
+</body>
+</html>
