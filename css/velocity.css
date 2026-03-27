@@ -28,6 +28,15 @@
     /* Fluid Spacing */
     --space-page: clamp(1rem, 5vw, 2.5rem);
     --space-section: clamp(3rem, 8vw, 6rem);
+
+    /* News Source Badge Colors */
+    --src-anthropic: #d4a017;
+    --src-nist: #5b8dd9;
+    --src-sec: #4ade80;
+    --src-ledger: #ff6b35;
+    --src-tangem: #a78bfa;
+    --src-fincen: #f472b6;
+    --src-bitcoin: #f7931a;
 }
 
 /* Base Reset & Typography */
