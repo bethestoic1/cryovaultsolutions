@@ -1,0 +1,40 @@
+[
+  {
+    "title": "CISA Alert: Hardening Endpoint Management Systems After Stryker Attack",
+    "slug": "cisa-alert-endpoint-management-hardening-2026",
+    "meta_desc": "CISA urges organizations to secure Microsoft Intune and endpoint systems following a major cyberattack on Stryker Corporation.",
+    "intro": "CISA has issued an emergency alert urging U.S. organizations to harden their endpoint management systems. This follows a high-profile cyberattack on Stryker Corporation that successfully compromised its Microsoft environment via insecure management configurations.",
+    "sections": [
+      {
+        "heading": "Microsoft Intune Best Practices",
+        "body": "CISA recommends strict enforcement of multi-admin approval for configuration changes and the application of least-privilege principles. The agency also mandates the use of phishing-resistant MFA for all users with administrative access to Intune."
+      },
+      {
+        "heading": "Defending Against Interlock",
+        "body": "The Interlock ransomware group has been identified as the primary threat actor in this campaign. They specifically target unpatched endpoint managers to gain lateral movement across corporate networks, necessitating immediate audits of all cloud-managed devices."
+      }
+    ],
+    "source": "security",
+    "date": "2026-03-26",
+    "ref_url": "https://www.cisa.gov/news-events/alerts/2026/03/18/cisa-urges-endpoint-management-system-hardening-after-cyberattack-against-us-organization"
+  },
+  {
+    "title": "CISA Mandates Patching of Critical Cisco Firewall Zero-Day",
+    "slug": "cisa-kev-cisco-firewall-patch-mandate",
+    "meta_desc": "CISA adds a critical Cisco Secure Firewall RCE flaw (CVE-2026-20131) to its Known Exploited Vulnerabilities catalog.",
+    "intro": "Federal agencies have been directed to immediately patch a critical remote code execution (RCE) flaw in Cisco Secure Firewall Management Center. The vulnerability, tracked as CVE-2026-20131, has been added to CISA's Known Exploited Vulnerabilities (KEV) catalog with a 72-hour remediation window.",
+    "sections": [
+      {
+        "heading": "Severity of CVE-2026-20131",
+        "body": "With a perfect 10.0 CVSS score, this flaw allows unauthenticated attackers to execute arbitrary code on the management console. It is currently being exploited in the wild to exfiltrate sensitive configuration data from government and enterprise networks."
+      },
+      {
+        "heading": "Remediation Steps",
+        "body": "Organizations must verify that their Firewall Management Center is running the latest security patch. CISA also recommends limiting management console access to trusted internal IP ranges only, further reducing the exposure to external scanners."
+      }
+    ],
+    "source": "security",
+    "date": "2026-03-26",
+    "ref_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+  }
+]
