@@ -85,6 +85,17 @@ def main():
             'ref_url': item.get("ref_url", "#")
         })
 
+    # Generate dynamic ticker from latest articles
+    ticker_articles = list(reversed(ARTICLES))[:8]
+    if not ticker_articles:
+        ticker_articles = [{'title': 'No articles yet — check back soon!', 'slug': 'index.html'}]
+
+    ticker_items = ''.join(
+        '                <li><a href="/news/%s">%s</a></li>\n' % (a['slug'], a['title'])
+        for a in ticker_articles
+    )
+    ticker_html = ticker_items + ticker_items  # duplicate for CSS seamless loop
+
     cards_html = ""
     if not ARTICLES:
         cards_html = '<div class="article-card" style="grid-column: 1 / -1; text-align:center;"><p>No news published yet. Check back soon!</p></div>'
@@ -170,13 +181,12 @@ def main():
 <body>
 <div class="container">
     <a href="/" class="btn-home">&larr; Back to Home</a>
-    
+
     <div class="ticker-wrap" aria-label="Latest headlines">
         <span class="ticker-label">LATEST</span>
         <div class="ticker-track">
             <ul class="ticker-list">
-                <li><a href="/news/">Healthcare conglomerate hit by zero-day ransomware</a></li>\n                <li><a href="/news/">Massive Azure misconfiguration exposes TBs of medical data</a></li>\n                <li><a href="/news/">Synology releases major security patch</a></li>\n                <li><a href="/news/">3-2-1 backup strategies deemed essential by CISA</a></li>\n                <li><a href="/news/">Healthcare conglomerate hit by zero-day ransomware</a></li>\n                <li><a href="/news/">Massive Azure misconfiguration exposes TBs of medical data</a></li>\n                <li><a href="/news/">Synology releases major security patch</a></li>\n                <li><a href="/news/">3-2-1 backup strategies deemed essential by CISA</a></li>
-            </ul>
+''' + ticker_html + '''            </ul>
         </div>
     </div>
 
