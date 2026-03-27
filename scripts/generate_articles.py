@@ -159,6 +159,9 @@ def main():
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <title>Data Security & Cold Storage News</title>
     <style>
 ''' + INDEX_STYLES + '''
@@ -224,6 +227,9 @@ def main():
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <title>''' + a["title"] + '''</title>
     <style>
         body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; background: #0d0d0d; color: #e0e0e0; max-width: 800px; margin: 0 auto; padding: 40px 20px; line-height: 1.6; }
